@@ -1,3 +1,1 @@
-# SolarGaps
-
-## Welcome to our page! 
+# Welcome to Solar Gaps
