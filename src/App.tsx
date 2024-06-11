@@ -1,16 +1,13 @@
-import { useState } from 'react';
+import { Header } from './components/header/header.component';
+import { HeroSection, QuoteSection, ImageSection } from './sections';
 
 function App() {
 	return (
-		<div className="flex">
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel vitae error consequatur repellendus eligendi odit illo ut
-				rerum blanditiis inventore tempore, pariatur, veritatis quia aut. Nemo eaque odit voluptatibus accusantium!
-			</p>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel vitae error consequatur repellendus eligendi odit illo ut
-				rerum blanditiis inventore tempore, pariatur, veritatis quia aut. Nemo eaque odit voluptatibus accusantium!
-			</p>
+		<div>
+			<Header />
+			<HeroSection />
+			<QuoteSection />
+			<ImageSection />
 		</div>
 	);
 }

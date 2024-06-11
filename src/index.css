@@ -14,6 +14,7 @@
 @layer base {
 	html {
 		background-color: #111111;
+		color: #ffffff;
 	}
 
 	body,
