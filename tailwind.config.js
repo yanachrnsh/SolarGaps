@@ -9,11 +9,13 @@ export default {
 				'dark-secondary': '#010101',
 				'brand-yellow': '#F9CD56',
 				'brand-yellow-secondary': '#FFC423',
+				'brand-grey': '#66666B',
 			},
 			fontSize: {
 				xs: ['0.75rem', '1.5rem'],
 				sm: ['0.875rem'],
 				'3xl': ['1.75rem', '2.55rem'],
+				'4xl': ['2.25rem', '2.5rem'],
 				'8xl': ['5.75rem', '7rem'],
 				// base: ['1rem', '1.5rem'],
 				// lg: ['1.125rem', '1.69rem'],
@@ -30,6 +32,13 @@ export default {
 			},
 			dropShadow: {
 				hero: ' 0px 12px 24px 0px rgba(249, 205, 86, 0.25)',
+			},
+			flex: {
+				40: '0 0 40%',
+				60: '0 0 60%',
+			},
+			maxWidth: {
+				128: '32rem',
 			},
 		},
 	},

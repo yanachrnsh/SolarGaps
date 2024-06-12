@@ -7,12 +7,12 @@ import { navLinks } from '../../constants/content-constants';
 // TODO: fix spacing
 export const Navbar = () => {
 	return (
-		<nav className="mx-auto flex max-w-7xl  items-center justify-between p-9 lg:px-9" aria-label="Global">
-			<div className=" flex ">
+		<nav>
+			{/* <div className=" flex ">
 				<a href="#">
 					<Icon description="Solar Gaps" icon={logo} styles={styles.iconLogo} />
 				</a>
-			</div>
+			</div> */}
 
 			<div className="flex  flex-1 justify-end lg:hidden">Menu mobile</div>
 			{/* TODO: gap?  */}
