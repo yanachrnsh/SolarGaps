@@ -3,15 +3,20 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			// TODO: rename colors to brand-colors
 			colors: {
 				'light-primary': '#ffffff',
+				'light-secondary': '#E0E0E9',
 				'dark-primary': '#000000',
 				'dark-secondary': '#010101',
 				'brand-yellow': '#F9CD56',
 				'brand-yellow-secondary': '#FFC423',
 				'brand-grey': '#66666B',
+				'brand-grey-secondary': '#1F1F1F',
+				'brand-grey-tertiary': '#777E90',
 			},
 			fontSize: {
+				xxs: ['0.75rem', '1.25rem'],
 				xs: ['0.75rem', '1.5rem'],
 				sm: ['0.875rem'],
 				'3xl': ['1.75rem', '2.55rem'],

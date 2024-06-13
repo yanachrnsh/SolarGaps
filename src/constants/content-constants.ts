@@ -11,6 +11,13 @@ import {
 	awardsTechtour,
 	awardsCop,
 	awardsSvief,
+	imgBlinds,
+	imgInverter,
+	imgMotor,
+	imgPanel,
+  loftHome,
+  ecoHouse,
+  patio,
 } from '../assets';
 
 export const navLinks = [
@@ -160,6 +167,55 @@ export const awardsSection = {
 				alt: 'awards-smarter',
 			},
 			subtitle: '2017, China',
+		},
+	],
+};
+
+// TODO: reneme svg to img or icon
+
+export const productsSection = {
+	header: 'Products',
+	products: [
+		{
+			title: 'Blinds',
+			svg: `${imgBlinds}`,
+		},
+		{
+			title: 'Panel',
+			svg: `${imgPanel}`,
+		},
+		{
+			title: 'Motor',
+			svg: `${imgMotor}`,
+		},
+		{
+			title: 'Inverter',
+			svg: `${imgInverter}`,
+		},
+	],
+};
+
+export type ForHomeCard = (typeof forHomeSection.cards)[0];
+
+export const forHomeSection = {
+	header: 'For home',
+	paragraph:
+		'SolarGaps smart external blinds are being installed worldwide. At the moment we have more than 300 installations in 35 countries and this number increases every month. Here you will find some photos that show installations in various locations. SolarGaps facade blinds with built-in PV panels is a perfect solution both for homes and businesses. Available in various color solutions, SolarGaps will match any interior and exterior design.',
+	cards: [
+		{
+			title: 'Loft apartment in Hengelo',
+			subtitle: 'Netherlands',
+			svg: `${loftHome}`,
+		},
+		{
+			title: 'Eco House',
+      subtitle: "Lithuania",
+			svg: `${ecoHouse}`,
+		},
+		{
+			title: 'Patio in Hengelo',
+			svg: `${patio}`,
+      subtitle: 'Netherlands',
 		},
 	],
 };

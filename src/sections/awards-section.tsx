@@ -17,14 +17,17 @@ export const AwardsSection = () => {
 	);
 };
 
-const AwardCard: FC<AwardCardType> = ({ title, subtitle, icon }) => {
+// TODO: move Awards card to a separate
+// TODO: Cards flex: 1 1 auto;
+
+const AwardCard: FC<AwardCardType> = ({ title, subtitle, icon } ) => {
 	const { svg, alt } = icon;
 	return (
 		<div className="flex flex-col justify-between border border-brand-grey rounded-xl pt-12 pb-8 px-8 h-80 box-border">
 			<img src={svg} alt={alt} className={`w-max`} />
 			<div className="gap-px">
-				<h3 className="text-xl font-semibold">{title}</h3>
-				<span className="text-base">{subtitle}</span>
+				<h4 className="text-base font-semibold">{title}</h4>
+				<span className="text-xxs text-brand-grey-tertiary">{subtitle}</span>
 			</div>
 		</div>
 	);

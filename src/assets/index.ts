@@ -12,6 +12,13 @@ import awardsCop from './awards-cop.svg';
 import awardsSmarter from './awards-smarter.svg';
 import awardsSvief from './awards-svief.svg';
 import awardsTechtour from './awards-techtour.svg';
+import imgBlinds from './img-blinds.svg';
+import imgInverter from './img-inverter.svg';
+import imgMotor from './img-motor.svg';
+import imgPanel from './img-panel.svg';
+import loftHome from "./loft-home.jpeg";
+import patio from "./patio.jpeg";
+import ecoHouse from "./eco-house.jpeg";
 
 export {
 	iconWallet,
@@ -28,4 +35,11 @@ export {
 	awardsSmarter,
 	awardsSvief,
 	awardsTechtour,
+	imgBlinds,
+	imgInverter,
+	imgMotor,
+	imgPanel,
+  loftHome,
+  patio,
+  ecoHouse
 };

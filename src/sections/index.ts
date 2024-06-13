@@ -2,7 +2,9 @@ import { AwardsSection } from './awards-section';
 import { HeroSection } from './hero-section';
 import { HowItWorksSection } from './how-it-works-section';
 import { ImageSection } from './image-section';
+import { ProductSection } from './products-section';
 import { QuoteSection } from './quote-section';
 import {WhyUsSection} from './why-us-section';
+import {ForHomeSection} from './for-home-section';
 
-export { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection };
+export { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection, ProductSection, ForHomeSection };

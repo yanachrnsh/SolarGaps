@@ -1,5 +1,5 @@
 import { Header } from './components/header/header.component';
-import { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection } from './sections';
+import { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection, ProductSection, ForHomeSection } from './sections';
 
 function App() {
 	return (
@@ -11,6 +11,8 @@ function App() {
 			<WhyUsSection />
 			<HowItWorksSection />
 			<AwardsSection />
+			<ProductSection />
+			<ForHomeSection />
 		</div>
 	);
 }
