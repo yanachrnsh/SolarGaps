@@ -19,6 +19,7 @@ import imgPanel from './img-panel.svg';
 import loftHome from "./loft-home.jpeg";
 import patio from "./patio.jpeg";
 import ecoHouse from "./eco-house.jpeg";
+import exampleHouse from "./example-house.jpeg";
 
 export {
 	iconWallet,
@@ -41,5 +42,6 @@ export {
 	imgPanel,
   loftHome,
   patio,
-  ecoHouse
+  ecoHouse, 
+  exampleHouse
 };

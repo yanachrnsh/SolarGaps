@@ -6,5 +6,6 @@ import { ProductSection } from './products-section';
 import { QuoteSection } from './quote-section';
 import {WhyUsSection} from './why-us-section';
 import {ForHomeSection} from './for-home-section';
+import { ForOfficeSection } from './for-office-section';
 
-export { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection, ProductSection, ForHomeSection };
+export { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection, ProductSection, ForHomeSection, ForOfficeSection };

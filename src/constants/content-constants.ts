@@ -15,9 +15,10 @@ import {
 	imgInverter,
 	imgMotor,
 	imgPanel,
-  loftHome,
-  ecoHouse,
-  patio,
+	loftHome,
+	ecoHouse,
+	patio,
+  exampleHouse,
 } from '../assets';
 
 export const navLinks = [
@@ -209,13 +210,57 @@ export const forHomeSection = {
 		},
 		{
 			title: 'Eco House',
-      subtitle: "Lithuania",
+			subtitle: 'Lithuania',
 			svg: `${ecoHouse}`,
 		},
 		{
 			title: 'Patio in Hengelo',
 			svg: `${patio}`,
-      subtitle: 'Netherlands',
+			subtitle: 'Netherlands',
 		},
 	],
+};
+
+export type ExampleTableRow = (typeof forOfficeScreen.exampleCard.table)[0];
+
+export const forOfficeScreen = {
+	header: 'For office',
+	title: 'Smart Blinds with built-in solar panels for your office building',
+	paragraph:
+		'Using the abundant vertical space SolarGaps can block heat entering through the windows and produce energy to power main office operations (up to 100 Watt per 1 sq.m.)',
+	button: 'Get a GUOTE',
+	exampleCard: {
+		title: 'Project example',
+		image: `${exampleHouse}`,
+		table: [
+			{
+				position: 'Type of commercial property',
+				value: 'Hotel',
+			},
+			{
+				position: 'Location',
+				value: 'Cyprus',
+			},
+			{
+				position: 'Window area',
+				value: '250 sq.m.',
+			},
+			{
+				position: 'Facing',
+				value: 'South-East',
+			},
+			{
+				position: 'Daily generation',
+				value: '23 kWh',
+			},
+			{
+				position: 'Project cost',
+				value: '€ 130000',
+			},
+			{
+				position: 'Annual savings',
+				value: '€ 44 000',
+			},
+		],
+	},
 };
