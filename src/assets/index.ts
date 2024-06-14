@@ -16,10 +16,11 @@ import imgBlinds from './img-blinds.svg';
 import imgInverter from './img-inverter.svg';
 import imgMotor from './img-motor.svg';
 import imgPanel from './img-panel.svg';
-import loftHome from "./loft-home.jpeg";
-import patio from "./patio.jpeg";
-import ecoHouse from "./eco-house.jpeg";
-import exampleHouse from "./example-house.jpeg";
+import loftHome from './loft-home.jpeg';
+import patio from './patio.jpeg';
+import ecoHouse from './eco-house.jpeg';
+import exampleHouse from './example-house.jpeg';
+import logo from './logo.svg';
 
 export {
 	iconWallet,
@@ -40,8 +41,9 @@ export {
 	imgInverter,
 	imgMotor,
 	imgPanel,
-  loftHome,
-  patio,
-  ecoHouse, 
-  exampleHouse
+	loftHome,
+	patio,
+	ecoHouse,
+	exampleHouse,
+	logo,
 };

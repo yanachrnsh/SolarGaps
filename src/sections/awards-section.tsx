@@ -2,6 +2,7 @@ import { styles } from '../constants/style-constants';
 import { awardsSection, type AwardCard as AwardCardType } from '../constants/content-constants';
 import { SectionHeader } from '../components/section-header/section-header.component';
 import { FC } from 'react';
+import { Icon } from '../components/icon/icon.component';
 
 export const AwardsSection = () => {
 	const { header, cards } = awardsSection;
@@ -20,11 +21,10 @@ export const AwardsSection = () => {
 // TODO: move Awards card to a separate
 // TODO: Cards flex: 1 1 auto;
 
-const AwardCard: FC<AwardCardType> = ({ title, subtitle, icon } ) => {
-	const { svg, alt } = icon;
+const AwardCard: FC<AwardCardType> = ({ title, subtitle, icon }) => {
 	return (
 		<div className="flex flex-col justify-between border border-brand-grey rounded-xl pt-12 pb-8 px-8 h-80 box-border">
-			<img src={svg} alt={alt} className={`w-max`} />
+			<Icon icon={icon} styles='w-max' />
 			<div className="gap-px">
 				<h4 className="text-base font-semibold">{title}</h4>
 				<span className="text-xxs text-brand-grey-tertiary">{subtitle}</span>

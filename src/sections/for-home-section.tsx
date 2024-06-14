@@ -7,6 +7,7 @@ import Slider from 'react-slick';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { SectionHeader } from '../components/section-header/section-header.component';
 
+
 export const ForHomeSection = () => {
 	const { header, paragraph } = forHomeSection;
 	const settings = {
@@ -30,7 +31,7 @@ export const ForHomeSection = () => {
 			<div className="w-full slider-container ">
 				<Slider {...settings}>
 					{forHomeSection.cards.map((item: ForHomeCardProps) => (
-						<ForHomeCard title={item.title} svg={item.svg} subtitle={item.subtitle} />
+						<ForHomeCard title={item.title} img={item.img} subtitle={item.subtitle} />
 					))}
 				</Slider>
 			</div>
@@ -39,15 +40,17 @@ export const ForHomeSection = () => {
 	);
 };
 
-const ForHomeCard: FC<ForHomeCardProps> = ({ title, svg, subtitle }) => {
+const ForHomeCard: FC<ForHomeCardProps> = ({ title, img, subtitle }) => {
 	return (
 		<div className={` pt-[461px] flex flex-col relative`}>
-			<img src={svg} alt="placeholder" className="rounded-xl absolute top-0 object-cover w-full h-[85%] left-0" />
+			<img src={img.src} alt={img.description} className="rounded-xl absolute top-0 object-cover w-full h-[85%] left-0" />
 			<h4 className="text-xl font-semibold">{title}</h4>
 			<span className="text-base text-brand-grey-tertiary">{subtitle}</span>
 		</div>
 	);
 };
+
+
 function SampleNextArrow({ className, style, onClick }: any) {
 	return (
 		<MdOutlineKeyboardArrowRight

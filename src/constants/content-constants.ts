@@ -18,7 +18,9 @@ import {
 	loftHome,
 	ecoHouse,
 	patio,
-  exampleHouse,
+	exampleHouse,
+	logo,
+	bgBuilding,
 } from '../assets';
 
 export const navLinks = [
@@ -59,6 +61,11 @@ export const buttons = [
 	},
 ];
 
+export const logoIcon = {
+	src: `${logo}`,
+	description: 'Solar Gaps home page',
+};
+
 export const heroSection = {
 	button: 'Get a GUOTE',
 	header: 'SolarGaps - world`s first smart solar blinds',
@@ -69,49 +76,51 @@ export const quoteSection = {
 	author: 'YEVGEN ERIK, CEO',
 };
 
+export type WhyUsCardIcon = {src: string, description: string};
+
 export const whyUsSection = {
 	header: 'Why choose\nSolarGaps?',
-	categories: [
+	cards: [
 		{
 			title: 'Lower your bills by 30%',
 			icon: {
-				svg: `${iconWallet}`,
-				alt: 'wallet',
+				src: `${iconWallet}`,
+				description: 'wallet',
 			},
 		},
 		{
 			title: 'Generate up to 100Wh',
 			icon: {
-				svg: `${iconFlash}`,
-				alt: 'flash',
+				src: `${iconFlash}`,
+				description: 'flash',
 			},
 		},
 		{
 			title: 'Smart auto shading mode',
 			icon: {
-				svg: `${iconAuto}`,
-				alt: 'auto',
+				src: `${iconAuto}`,
+				description: 'auto',
 			},
 		},
 		{
 			title: 'Control with Mobile App',
 			icon: {
-				svg: `${iconPhone}`,
-				alt: 'phone',
+				src: `${iconPhone}`,
+				description: 'phone',
 			},
 		},
 		{
 			title: 'Eco lifestyle',
 			icon: {
-				svg: `${iconLeaf}`,
-				alt: 'wallet',
+				src: `${iconLeaf}`,
+				description: 'wallet',
 			},
 		},
 		{
 			title: 'Reducing carbon footprint',
 			icon: {
-				svg: `${iconCO2}`,
-				alt: 'co2',
+				src: `${iconCO2}`,
+				description: 'co2',
 			},
 		},
 	],
@@ -132,68 +141,84 @@ export const awardsSection = {
 		{
 			title: 'The Smarter E',
 			icon: {
-				svg: `${awardsSmarter}`,
-				alt: 'awards-smarter',
+				src: `${awardsSmarter}`,
+				description: 'awards-smarter',
 			},
 			subtitle: '2019, Germany',
 		},
 		{
 			title: 'Amazon',
 			icon: {
-				svg: `${awardsAmazon}`,
-				alt: 'awards-amazons',
+				src: `${awardsAmazon}`,
+				description: 'awards-amazons',
 			},
 			subtitle: '2018, China',
 		},
 		{
 			title: 'TechTour',
 			icon: {
-				svg: `${awardsTechtour}`,
-				alt: 'awards-techTour',
+				src: `${awardsTechtour}`,
+				description: 'awards-techTour',
 			},
 			subtitle: '2018, Poland',
 		},
 		{
 			title: 'COP 24',
 			icon: {
-				svg: `${awardsCop}`,
-				alt: 'awards-cop',
+				src: `${awardsCop}`,
+				description: 'awards-cop',
 			},
 			subtitle: '2018, Poland',
 		},
 		{
 			title: 'Svief Star',
 			icon: {
-				svg: `${awardsSvief}`,
-				alt: 'awards-smarter',
+				src: `${awardsSvief}`,
+				description: 'awards-smarter',
 			},
 			subtitle: '2017, China',
 		},
 	],
 };
 
-// TODO: reneme svg to img or icon
+// TODO: reneme src to img or icon
+
+
+export type ProductCard = (typeof productsSection.products.blinds);
 
 export const productsSection = {
 	header: 'Products',
-	products: [
-		{
+
+	products: {
+		blinds: {
 			title: 'Blinds',
-			svg: `${imgBlinds}`,
+			img: {
+				src: `${imgBlinds}`,
+				description: 'Black blinds for windows',
+			},
 		},
-		{
+		panel: {
 			title: 'Panel',
-			svg: `${imgPanel}`,
+			img: {
+				src: `${imgPanel}`,
+				description: 'Solar panel',
+			},
 		},
-		{
+		motor: {
 			title: 'Motor',
-			svg: `${imgMotor}`,
+			img: {
+				src: `${imgMotor}`,
+				description: 'Motor',
+			},
 		},
-		{
+		inverter: {
 			title: 'Inverter',
-			svg: `${imgInverter}`,
+			img: {
+				src: `${imgInverter}`,
+				description: 'Inverter',
+			},
 		},
-	],
+	},
 };
 
 export type ForHomeCard = (typeof forHomeSection.cards)[0];
@@ -206,24 +231,28 @@ export const forHomeSection = {
 		{
 			title: 'Loft apartment in Hengelo',
 			subtitle: 'Netherlands',
-			svg: `${loftHome}`,
+			img: { src: `${loftHome}`, description: 'Loft apartment with a glass roof' },
 		},
 		{
 			title: 'Eco House',
 			subtitle: 'Lithuania',
-			svg: `${ecoHouse}`,
+			img: { src: `${ecoHouse}`, description: 'Eco house lined with wood' },
 		},
 		{
 			title: 'Patio in Hengelo',
-			svg: `${patio}`,
+			img: { src: `${patio}`, description: 'Patio made of brick' },
 			subtitle: 'Netherlands',
 		},
 	],
 };
 
-export type ExampleTableRow = (typeof forOfficeScreen.exampleCard.table)[0];
+export const imageSection = {
+	img: { src: `${bgBuilding}`, description: 'Building with vertical solar' },
+};
 
-export const forOfficeScreen = {
+export type ExampleTableRow = (typeof forOfficeSection.exampleCard.table)[0];
+
+export const forOfficeSection = {
 	header: 'For office',
 	title: 'Smart Blinds with built-in solar panels for your office building',
 	paragraph:
@@ -231,35 +260,35 @@ export const forOfficeScreen = {
 	button: 'Get a GUOTE',
 	exampleCard: {
 		title: 'Project example',
-		image: `${exampleHouse}`,
+		img: { src: `${exampleHouse}`, description: 'Modern house with vertical solar panels' },
 		table: [
 			{
-				position: 'Type of commercial property',
-				value: 'Hotel',
+				category: 'Type of commercial property',
+				information: 'Hotel',
 			},
 			{
-				position: 'Location',
-				value: 'Cyprus',
+				category: 'Location',
+				information: 'Cyprus',
 			},
 			{
-				position: 'Window area',
-				value: '250 sq.m.',
+				category: 'Window area',
+				information: '250 sq.m.',
 			},
 			{
-				position: 'Facing',
-				value: 'South-East',
+				category: 'Facing',
+				information: 'South-East',
 			},
 			{
-				position: 'Daily generation',
-				value: '23 kWh',
+				category: 'Daily generation',
+				information: '23 kWh',
 			},
 			{
-				position: 'Project cost',
-				value: '€ 130000',
+				category: 'Project cost',
+				information: '€ 130000',
 			},
 			{
-				position: 'Annual savings',
-				value: '€ 44 000',
+				category: 'Annual savings',
+				information: '€ 44 000',
 			},
 		],
 	},

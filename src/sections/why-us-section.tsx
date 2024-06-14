@@ -1,10 +1,11 @@
 import { styles } from '../constants/style-constants';
-import { whyUsSection } from '../constants/content-constants';
+import { whyUsSection, WhyUsCardIcon } from '../constants/content-constants';
 import { FC } from 'react';
 import { SectionHeader } from '../components/section-header/section-header.component';
+import { Icon } from '../components/icon/icon.component';
 
 export const WhyUsSection = () => {
-	const { header, categories } = whyUsSection;
+	const { header, cards } = whyUsSection;
 	return (
 		<section className={styles.sectionLayout}>
 			<div className="flex">
@@ -13,8 +14,8 @@ export const WhyUsSection = () => {
 				</div>
 
 				<div className="grid grid-cols-3 grid-rows-2 gap-10 flex-60">
-					{categories.map(category => (
-						<CategoryCard key={category.title} title={category.title} icon={category.icon} />
+					{cards.map(card => (
+						<CategoryCard key={card.title} title={card.title} icon={card.icon} />
 					))}
 				</div>
 			</div>
@@ -26,16 +27,13 @@ export const WhyUsSection = () => {
 
 interface CategoryCardProps {
 	title: string;
-	icon: {
-		svg: string;
-		alt: string;
-	};
+	icon: WhyUsCardIcon;
 }
 
 const CategoryCard: FC<CategoryCardProps> = ({ title, icon }) => {
 	return (
 		<div className="flex flex-col gap-8">
-			<img src={icon.svg} alt={icon.alt} className="w-16 h-16" />
+			<Icon icon={icon} styles="w-16 h-16" />
 			<span className="text-xl font-semibold">{title}</span>
 		</div>
 	);

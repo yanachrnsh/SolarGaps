@@ -1,14 +1,16 @@
 interface IconProps {
-	icon: string;
+	icon: {
+		src: string;
+		description?: string;
+	};
 	styles?: string;
-	description: string;
 }
 
-export const Icon = ({ icon, styles, description }: IconProps) => {
+export const Icon = ({ icon, styles }: IconProps) => {
 	return (
 		<>
-			<span className="sr-only">{description}</span>
-			<img src={icon} alt="" className={`h-8 w-auto ${styles}`}></img>
+			<span className="sr-only">{icon.description}</span>
+			<img src={icon.src} alt="" className={`${styles}`}></img>
 		</>
 	);
 };
