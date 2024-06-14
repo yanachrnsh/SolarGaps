@@ -9,6 +9,8 @@ import {
 	ProductSection,
 	ForHomeSection,
 	ForOfficeSection,
+	MilestonesSection, 
+	PartnershipsSection
 } from './sections';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
 			<ProductSection />
 			<ForHomeSection />
 			<ForOfficeSection />
+			<MilestonesSection />
+			<PartnershipsSection/>
 		</div>
 	);
 }

@@ -21,6 +21,7 @@ export default {
 				sm: ['0.875rem'],
 				'text-base-l': ['1rem', '1.25em'],
 				'3xl': ['1.75rem', '2.55rem'],
+				'3.5xl': ['2rem', '2rem'],
 				'4xl': ['2.25rem', '2.5rem'],
 				'5xl': ['3rem', '3.75rem'],
 				'8xl': ['5.75rem', '7rem'],

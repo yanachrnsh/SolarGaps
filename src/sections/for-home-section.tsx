@@ -35,7 +35,6 @@ export const ForHomeSection = () => {
 					))}
 				</Slider>
 			</div>
-			<div></div>
 		</section>
 	);
 };

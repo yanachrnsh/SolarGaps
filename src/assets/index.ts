@@ -21,7 +21,7 @@ import patio from './patio.jpeg';
 import ecoHouse from './eco-house.jpeg';
 import exampleHouse from './example-house.jpeg';
 import logo from './logo.svg';
-
+import imgGlobe from './img-globe.svg';
 export {
 	iconWallet,
 	iconPhone,
@@ -46,4 +46,5 @@ export {
 	ecoHouse,
 	exampleHouse,
 	logo,
+  imgGlobe
 };

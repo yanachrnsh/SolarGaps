@@ -6,11 +6,7 @@ export const linesBreak = (quote: string) => {
 		return (
 			<React.Fragment key={index}>
 				{line.trim()}
-				{index !== quote.split('\n').length - 1 && (
-					<p>
-						<br />
-					</p>
-				)}
+				{index !== quote.split('\n').length - 1 && <br />}
 			</React.Fragment>
 		);
 	});

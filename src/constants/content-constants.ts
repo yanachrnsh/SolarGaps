@@ -21,6 +21,7 @@ import {
 	exampleHouse,
 	logo,
 	bgBuilding,
+	imgGlobe,
 } from '../assets';
 
 export const navLinks = [
@@ -76,7 +77,7 @@ export const quoteSection = {
 	author: 'YEVGEN ERIK, CEO',
 };
 
-export type WhyUsCardIcon = {src: string, description: string};
+export type WhyUsCardIcon = { src: string; description: string };
 
 export const whyUsSection = {
 	header: 'Why choose\nSolarGaps?',
@@ -183,8 +184,7 @@ export const awardsSection = {
 
 // TODO: reneme src to img or icon
 
-
-export type ProductCard = (typeof productsSection.products.blinds);
+export type ProductCard = typeof productsSection.products.blinds;
 
 export const productsSection = {
 	header: 'Products',
@@ -291,5 +291,63 @@ export const forOfficeSection = {
 				information: '€ 44 000',
 			},
 		],
+	},
+};
+
+export type MilestoneCard = (typeof milestonesSection.cards)[0];
+
+export const milestonesSection = {
+	header: 'Milestones',
+	cards: [
+		{
+			year: '2016',
+			description: 'NASA AMES Center\nSingularity University\nFirst Patent Received',
+		},
+		{
+			year: '2017',
+			description: 'Top Silicon Valley Startups HAX Accelerator\nSvief Star Award',
+		},
+		{
+			year: '2017',
+			description: 'CE Certification\nDeclaration Of Performance\nDeclaration Of Conformity\nAmazon Innovation Award',
+		},
+		{
+			year: '2018',
+			description: 'PCT Patent\nSmarterE Award\nFull-Scale Manufacturing',
+		},
+		{
+			year: '2019',
+			description: 'Horizon 2020 EUR 1M Grant\nGerman Design Award\nKaterva Sustainability Award',
+		},
+		{
+			year: '2020',
+			description: 'B2B Product Development\nDubai World Expo 2020\nNaN Arquitectura Award',
+		},
+	],
+};
+
+export const partnershipsSection = {
+	header: 'Partnerships',
+	paragraph1:
+		'We are actively pursuing partnership around the world to assure our solution is available worldwide. Our marketing team will provide you with a line of customers to your showroom, while we expect professional installation and service from you.',
+	paragraph2: 'Join our team! With SolarGaps your building can become one step closer to Net Zero..',
+	cards: {
+		img: {
+			src: `${imgGlobe}`,
+			description: 'Global partnership map',
+		},
+		bullets: ['Headquarters', 'Manufacturing', 'Distributors'],
+		distributor: {
+			title: 'Distributor',
+			description:
+				'authorized representative in a designated country, who performs full-cycle operations from imports to installation and after-service service',
+			button: 'APPLY',
+		},
+		sales: {
+			title: 'Sales Partner',
+			description:
+				'local sales team, who will refer new customers to us and bring exciting deals, but the execution of the project will be forwarded to an authorized distributor',
+			button: 'APPLY',
+		},
 	},
 };
