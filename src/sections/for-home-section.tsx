@@ -7,7 +7,6 @@ import Slider from 'react-slick';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { SectionHeader } from '../components/section-header/section-header.component';
 
-
 export const ForHomeSection = () => {
 	const { header, paragraph } = forHomeSection;
 	const settings = {
@@ -48,7 +47,6 @@ const ForHomeCard: FC<ForHomeCardProps> = ({ title, img, subtitle }) => {
 		</div>
 	);
 };
-
 
 function SampleNextArrow({ className, style, onClick }: any) {
 	return (

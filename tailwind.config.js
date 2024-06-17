@@ -14,6 +14,8 @@ export default {
 				'brand-grey': '#66666B',
 				'brand-grey-secondary': '#1F1F1F',
 				'brand-grey-tertiary': '#777E90',
+				'brand-blue-primary': 'rgba(27, 231, 255, 1)',
+				'brand-green-primary': '#00FFA3',
 			},
 			fontSize: {
 				xxs: ['0.75rem', '1.25rem'],
@@ -42,8 +44,9 @@ export default {
 				hero: ' 0px 12px 24px 0px rgba(249, 205, 86, 0.25)',
 			},
 			flex: {
-				40: '0 0 40%',
-				60: '0 0 60%',
+				20: '1 1 20%',
+				40: '1 1 40%',
+				60: '1 1 60%',
 			},
 			maxWidth: {
 				128: '32rem',

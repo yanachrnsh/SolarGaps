@@ -22,6 +22,12 @@ import {
 	logo,
 	bgBuilding,
 	imgGlobe,
+	imgYevgen,
+	imgOleksandr,
+	imgAndrew,
+	imgYankoDesign,
+	imgTechCrunch,
+	imgInterSolar,
 } from '../assets';
 
 export const navLinks = [
@@ -326,6 +332,8 @@ export const milestonesSection = {
 	],
 };
 
+export type BulletsKeys = keyof typeof partnershipsSection.cards.bullets;
+
 export const partnershipsSection = {
 	header: 'Partnerships',
 	paragraph1:
@@ -336,7 +344,11 @@ export const partnershipsSection = {
 			src: `${imgGlobe}`,
 			description: 'Global partnership map',
 		},
-		bullets: ['Headquarters', 'Manufacturing', 'Distributors'],
+		bullets: [
+			{ title: 'Headquarters', iconColor: `brand-yellow` },
+			{ title: 'Manufacturing', iconColor: `brand-blue-primary` },
+			{ title: 'Distributors', iconColor: `brand-green-primary` },
+		],
 		distributor: {
 			title: 'Distributor',
 			description:
@@ -350,4 +362,59 @@ export const partnershipsSection = {
 			button: 'APPLY',
 		},
 	},
+};
+
+export type MissionTeamCard = (typeof missionTeamSection.cards)[0];
+
+export const missionTeamSection = {
+	header: 'Mission & Team',
+	title: 'Since 2016 SolarGaps has been on a mission to make energy free and accessible to all',
+	paragraph1:
+		'We are pioneering a method of energy distribution that will power the offices, homes and cities of the future. By exploring innovative concepts and adopting new technologies, we can help move every city closer to their Net Zero goals.',
+	paragraph2:
+		'JIt is our vision that one day, the home will not be connected to the grid, but rather the grid will be connected to the homes. Together we can create a brighter future.',
+	cards: [
+		{
+			title: 'Yevgen Erik',
+			subtitle: 'CEO',
+			img: { src: `${imgYevgen}`, description: 'Photo of CEO' },
+		},
+		{
+			title: 'Oleksandr Krotenko',
+			subtitle: 'COO',
+			img: { src: `${imgOleksandr}`, description: 'Photo of COO' },
+		},
+		{
+			title: 'Andrew Koval',
+			subtitle: 'CTO',
+			img: { src: `${imgAndrew}`, description: 'Photo of CTO' },
+		},
+	],
+};
+
+export const pressAboutUsSection = {
+	header: 'Press About us',
+	cards: [
+		{
+			title: 'Your windows become powerful with SolarGaps',
+			subtitle: 'TechCrunch',
+			button: 'READ MORE',
+			date: 'May 31, 2017',
+			img: { src: `${imgTechCrunch}`, description: '' },
+		},
+		{
+			title: 'Charge your Tesla and lower your electric bill with these Solar blinds',
+			subtitle: 'Yanko Design',
+			button: 'READ MORE',
+			date: 'February 2, 2020',
+			img: { src: `${imgYankoDesign}`, description: '' },
+		},
+		{
+			title: `The finalist of ‘The smarter Eʼ 2019in the category ‘Smart Renewable Energy`,
+			subtitle: 'InterSolar',
+			button: 'READ MORE',
+			date: 'February 2, 2020',
+			img: { src: `${imgInterSolar}`, description: '' },
+		},
+	],
 };

@@ -22,6 +22,13 @@ import ecoHouse from './eco-house.jpeg';
 import exampleHouse from './example-house.jpeg';
 import logo from './logo.svg';
 import imgGlobe from './img-globe.svg';
+import imgYevgen from './img-Yevgen.jpg';
+import imgOleksandr from './img-Oleksandr.jpg';
+import imgAndrew from './img-Andrew.jpg';
+import imgInterSolar from './img-inter-solar.svg';
+import imgYankoDesign from './img-yanko-design.svg';
+import imgTechCrunch from './img-tech-crunch.svg';
+
 export {
 	iconWallet,
 	iconPhone,
@@ -46,5 +53,11 @@ export {
 	ecoHouse,
 	exampleHouse,
 	logo,
-  imgGlobe
+	imgGlobe,
+	imgYevgen,
+	imgOleksandr,
+	imgAndrew,
+	imgInterSolar,
+	imgYankoDesign,
+	imgTechCrunch,
 };

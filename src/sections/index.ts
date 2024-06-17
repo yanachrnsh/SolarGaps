@@ -9,5 +9,8 @@ import {ForHomeSection} from './for-home-section';
 import { ForOfficeSection } from './for-office-section';
 import { MilestonesSection } from './milestones-section';
 import { PartnershipsSection } from './partnerships-section';
+import { MissionTeamSection } from './mission-team-section';
+import { PressAboutUsSection } from './press-about-us-section';
 
-export { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection, ProductSection, ForHomeSection, ForOfficeSection, MilestonesSection, PartnershipsSection };
+
+export { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection, ProductSection, ForHomeSection, ForOfficeSection, MilestonesSection, PartnershipsSection, MissionTeamSection , PressAboutUsSection};
