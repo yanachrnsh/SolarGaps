@@ -7,12 +7,12 @@ export const HowItWorksSection = () => {
 	return (
 		<section className={styles.sectionLayout}>
 			<SectionHeader header={header} headerStyles={`${styles.paddings.headerSection}`} />
-			<div className="flex">
-				<div className="flex-40">
-					<p className="text-base max-w-[70%]">{paragraph}</p>
+			<div className={styles.flexSection}>
+				<div className={styles.sectionLeft}>
+					<p className="text-base tracking-wide">{paragraph}</p>
 				</div>
 				{/* TODO: add video  */}
-				<div className="flex-60">
+				<div className={styles.sectionRight}>
 					<img src={video} alt="video" className="w-full" />
 				</div>
 			</div>

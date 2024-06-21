@@ -10,5 +10,6 @@
 	"quoteProps": "as-needed",
 	"bracketSpacing": true,
 	"jsxBracketSameLine": false,
-	"semi": true
+	"semi": true,
+	"plugins": ["prettier-plugin-tailwindcss"]
 }

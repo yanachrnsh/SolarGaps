@@ -10,9 +10,9 @@ export const HeroSection = () => {
 	const { header, button } = heroSection;
 	return (
 		<section className={`bg-background-hero ${styles.sectionImgBg}`}>
-			<div className={styles.sectionLayout}>
-				<div className="text-start">
-					<h1 className="text-8xl font-semibold tracking-tight max-w-[790px]">{header}</h1>
+			<div className={`${styles.sectionHero} flex`}>
+				<div className="w-full text-start lg:w-[70%]">
+					<h1 className={styles.h1}>{header}</h1>
 
 					<div className="mt-10 flex gap-x-6">
 						<AnchorButton href="#">

@@ -8,12 +8,12 @@ export const WhyUsSection = () => {
 	const { header, cards } = whyUsSection;
 	return (
 		<section className={styles.sectionLayout}>
-			<div className="flex">
-				<div className="flex-40">
+			<div className={styles.flexSection}>
+				<div className={styles.sectionLeft}>
 					<SectionHeader header={header} headerStyles={'max-w-56'} />
 				</div>
 
-				<div className="grid grid-cols-3 grid-rows-2 gap-10 flex-60">
+				<div className={`${styles.sectionRight} grid grid-cols-3 grid-rows-2 gap-10`}>
 					{cards.map(card => (
 						<CategoryCard key={card.title} title={card.title} icon={card.icon} />
 					))}
@@ -22,8 +22,6 @@ export const WhyUsSection = () => {
 		</section>
 	);
 };
-
-// TODO: write generic T?
 
 interface CategoryCardProps {
 	title: string;

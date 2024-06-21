@@ -8,10 +8,10 @@ export const QuoteSection = () => {
 	return (
 		<section className={styles.sectionLayout}>
 			<div className="flex justify-end">
-				<div className="flex-60">
-					<p className="text-3xl font-medium">{lineBreak(quote)}</p>
+				<div className={styles.sectionRight}>
+					<p className="text-3xl font-medium -tracking-tight">{lineBreak(quote)}</p>
 					<div className="mt-8 flex gap-x-5">
-						<span className="text-base text-brand-yellow font-extrabold">{author}</span>
+						<span className="text-base text-brand-yellow font-extrabold ">{author}</span>
 						<IoArrowForward size={24} />
 					</div>
 				</div>

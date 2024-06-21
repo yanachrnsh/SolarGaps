@@ -25,9 +25,9 @@ export const ForHomeSection = () => {
 					<SectionHeader header={header} headerStyles={`${styles.paddings.headerSection}`} />
 				</div>
 
-				<p className="text-base text-light-secondary font-semibold flex-60">{paragraph}</p>
+				<p className="flex-60 text-base font-semibold text-light-secondary">{paragraph}</p>
 			</div>
-			<div className="w-full slider-container ">
+			<div className="slider-container w-full">
 				<Slider {...settings}>
 					{forHomeSection.cards.map((item: ForHomeCardProps) => (
 						<ForHomeCard title={item.title} img={item.img} subtitle={item.subtitle} />
@@ -40,8 +40,8 @@ export const ForHomeSection = () => {
 
 const ForHomeCard: FC<ForHomeCardProps> = ({ title, img, subtitle }) => {
 	return (
-		<div className={` pt-[461px] flex flex-col relative`}>
-			<img src={img.src} alt={img.description} className="rounded-xl absolute top-0 object-cover w-full h-[85%] left-0" />
+		<div className={`relative flex flex-col pt-[461px]`}>
+			<img src={img.src} alt={img.description} className="absolute left-0 top-0 h-[85%] w-full rounded-xl object-cover" />
 			<h4 className="text-xl font-semibold">{title}</h4>
 			<span className="text-base text-brand-grey-tertiary">{subtitle}</span>
 		</div>
@@ -57,7 +57,7 @@ interface SampleArrowProps {
 function SampleNextArrow({ className, style, onClick }: SampleArrowProps) {
 	return (
 		<MdOutlineKeyboardArrowRight
-			className={`${className} block text-brand-yellow hover:text-brand-yellow-secondary w-12 h-12 z-10`}
+			className={`${className} z-10 block h-12 w-12 text-brand-yellow hover:text-brand-yellow-secondary`}
 			style={style}
 			onClick={onClick}
 			size={48}
@@ -68,7 +68,7 @@ function SampleNextArrow({ className, style, onClick }: SampleArrowProps) {
 function SamplePrevArrow({ className, style, onClick }: SampleArrowProps) {
 	return (
 		<MdOutlineKeyboardArrowLeft
-			className={`${className} block text-brand-yellow hover:text-brand-yellow-secondary w-12 h-12 z-10`}
+			className={`${className} z-10 block h-12 w-12 text-brand-yellow hover:text-brand-yellow-secondary`}
 			size={48}
 			style={style}
 			onClick={onClick}

@@ -19,23 +19,16 @@ export default {
 				'brand-green-primary': '#00FFA3',
 			},
 			fontSize: {
-				xxs: ['0.75rem', '1.25rem'],
-				xs: ['0.75rem', '1.5rem'],
-				sm: ['0.875rem'],
-				'text-base-l': ['1rem', '1.25em'],
-				'3xl': ['1.75rem', '2.55rem'],
-				'3.5xl': ['2rem', '2rem'],
-				'4xl': ['2.25rem', '2.5rem'],
-				'5xl': ['3rem', '3.75rem'],
-				'8xl': ['5.75rem', '7rem'],
-				// base: ['1rem', '1.5rem'],
-				// lg: ['1.125rem', '1.69rem'],
-				// xl: ['1.25rem', '1.81rem'],
-				// '2xl': ['1.5rem', '1.875rem'],
-				// '3xl': ['1.75rem', '2.1rem'],
-				// '4xl': ['2rem', '2.187rem'],
-				// '5xl': ['2.75rem', '3.3rem'],
-				// '6xl': ['3.5rem', '3.8125rem']
+				xxs: ['0.75rem', '1.25rem'], //12px - 20px
+				xs: ['0.75rem', '1.5rem'], //12px - 24px
+				sm: ['0.875rem'], //14px
+				'text-base-l': ['1rem', '1.25em'], //16px - 20px
+				'3xl': ['1.75rem', '2.55rem'], //28px - 41px
+				'3.5xl': ['2rem', '2rem'], //32px
+				'4xl': ['2.25rem', '2.5rem'], //36px - 40px
+				'5xl': ['3rem', '4rem'], //48px - 60px
+				'6xl': ['3rem', '3.75rem'], //48px - 64px
+				'8xl': ['5.75rem', '7rem'], //92px - 112px
 			},
 			backgroundImage: {
 				'background-hero': "url('./assets/hero-bg-img.svg')",
@@ -52,7 +45,24 @@ export default {
 			maxWidth: {
 				128: '32rem',
 			},
-			
+			screens: {
+				xs: '375px',
+				// 'sm': '640px',
+				// // => @media (min-width: 640px) { ... }
+
+				// 'md': '768px',
+				// // => @media (min-width: 768px) { ... }
+
+				// 'lg': '1024px',
+				// // => @media (min-width: 1024px) { ... }
+
+				// 'xl': '1280px',
+				// // => @media (min-width: 1280px) { ... }
+
+				// '2xl': '1536px',
+				// // => @media (min-width: 1536px) { ... }
+			},
+			letterSpacing: {},
 		},
 	},
 	plugins: [],
