@@ -49,6 +49,7 @@ interface QuestionCardProps {
 }
 
 // TODO: fix Collapse component add animation
+// TODO: add icon 
 
 const Collapse: React.FC<QuestionCardProps> = ({ card, toggleCollapse: toggleCollapse, isCollapsed, index }) => {
 	const variants = {
@@ -58,7 +59,7 @@ const Collapse: React.FC<QuestionCardProps> = ({ card, toggleCollapse: toggleCol
 	return (
 		<div className="py-8 border-b first:pt-0">
 			<button
-				className={`bg-none border-none w-full cursor-pointer overflow-hidden text-start ${isCollapsed ? '' : 'pb-6 '}`}
+				className={`bg-none border-none w-full cursor-pointer overflow-hidden text-start font-semibold text-2xl ${isCollapsed ? '' : 'pb-6 '}`}
 				onClick={() => toggleCollapse(index)}
 			>
 				{card.title}

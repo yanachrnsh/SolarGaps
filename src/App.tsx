@@ -1,4 +1,5 @@
 import { Header } from './components/header/header.component';
+import { Footer } from './components/footer/footer.component';
 import {
 	HeroSection,
 	QuoteSection,
@@ -36,6 +37,7 @@ function App() {
 			<PressAboutUsSection />
 			<FrequentlyAskedQuestionsSection />
 			<ContactSection />
+			<Footer/>
 		</div>
 	);
 }

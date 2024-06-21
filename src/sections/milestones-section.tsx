@@ -2,7 +2,7 @@ import { styles } from '../constants/style-constants';
 import { milestonesSection, type MilestoneCard as MilestoneCardType } from '../constants/content-constants';
 import { SectionHeader } from '../components/section-header/section-header.component';
 import { FC } from 'react';
-import { linesBreak } from '../utils/linesBreak';
+import { lineBreak } from '../utils/line-break';
 
 export const MilestonesSection = () => {
 	const { header, cards } = milestonesSection;
@@ -25,7 +25,7 @@ const MilestoneCard: FC<MilestoneCardType> = ({ year, description }) => {
 		<div className="flex flex-col gap-9 ">
 			<h4 className="text-3.5xl font-semibold border-b-4 border-brand-yellow pb-3">{year}</h4>
 
-			<span className="text-base text-brand-grey-tertiary">{linesBreak(description)}</span>
+			<span className="text-base text-brand-grey-tertiary">{lineBreak(description)}</span>
 		</div>
 	);
 };

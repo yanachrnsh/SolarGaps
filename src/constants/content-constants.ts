@@ -422,7 +422,7 @@ export const pressAboutUsSection = {
 // TODO:ipdate descriptio
 
 export const frequentlyAskedQuestionsSection = {
-	header: 'Press About us',
+	header: 'Frequently Asked Questions',
 	cards: [
 		{
 			title: 'How does SolarGaps work?',
@@ -476,3 +476,9 @@ export const contactSection = {
 		message: 'YOUR MESSAGE',
 	},
 };
+
+export const footer = {
+	address: "2810 N Church St\nPMB 32367\nWilmington, Delaware 19802-4447",
+	email: " hello@solargaps.com"
+
+}

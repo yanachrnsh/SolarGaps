@@ -1,7 +1,7 @@
 import React from 'react';
 
 // TODO: fix console.log
-export const linesBreak = (quote: string) => {
+export const lineBreak = (quote: string) => {
 	return quote.split('\n').map((line, index) => {
 		return (
 			<React.Fragment key={index}>

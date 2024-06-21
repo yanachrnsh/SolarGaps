@@ -16,3 +16,5 @@ export const styles = {
 export const hoverStyles = {
 	transition: 'transition-all duration-300 ease-in-out',
 };
+
+
