@@ -48,7 +48,13 @@ const ForHomeCard: FC<ForHomeCardProps> = ({ title, img, subtitle }) => {
 	);
 };
 
-function SampleNextArrow({ className, style, onClick }: any) {
+interface SampleArrowProps {
+	className: string;
+	style: React.CSSProperties;
+	onClick: () => void;
+}
+
+function SampleNextArrow({ className, style, onClick }: SampleArrowProps) {
 	return (
 		<MdOutlineKeyboardArrowRight
 			className={`${className} block text-brand-yellow hover:text-brand-yellow-secondary w-12 h-12 z-10`}
@@ -59,7 +65,7 @@ function SampleNextArrow({ className, style, onClick }: any) {
 	);
 }
 
-function SamplePrevArrow({ className, style, onClick }: any) {
+function SamplePrevArrow({ className, style, onClick }: SampleArrowProps) {
 	return (
 		<MdOutlineKeyboardArrowLeft
 			className={`${className} block text-brand-yellow hover:text-brand-yellow-secondary w-12 h-12 z-10`}

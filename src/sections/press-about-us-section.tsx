@@ -34,14 +34,15 @@ type PressCardProps = {
 };
 
 // TODO: update font size
+// TODO: update padding pr-16 to gap between elements
 
 const PressCard: FC<PressCardProps> = ({ card }) => {
 	const { title, subtitle, button, date, img } = card;
 	return (
-		<div className="flex border-y border-brand-grey py-8 gap-16">
-			<div className="flex-40 flex">
+		<div className="flex border-y border-brand-grey py-8 ">
+			<div className="flex-40 flex pr-16">
 				<span className="flex-20 text-sm text-brand-grey-tertiary">{date}</span>
-				<div className="flex-1 bg-light-primary rounded-lg px-7 pt-[53px]">
+				<div className="flex-1 bg-light-primary rounded-lg px-7 pt-[53px] pb-9">
 					<img src={img.src} alt={img.description} className="w-full max-w-[14.75rem] max-h-[5.7rem]" />
 				</div>
 			</div>

@@ -11,6 +11,8 @@ import { MilestonesSection } from './milestones-section';
 import { PartnershipsSection } from './partnerships-section';
 import { MissionTeamSection } from './mission-team-section';
 import { PressAboutUsSection } from './press-about-us-section';
+import { FrequentlyAskedQuestionsSection } from './frequently-asked-questions-section';
+import { ContactSection } from './contact-section';
 
 
-export { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection, ProductSection, ForHomeSection, ForOfficeSection, MilestonesSection, PartnershipsSection, MissionTeamSection , PressAboutUsSection};
+export { HeroSection, QuoteSection, ImageSection, WhyUsSection, HowItWorksSection, AwardsSection, ProductSection, ForHomeSection, ForOfficeSection, MilestonesSection, PartnershipsSection, MissionTeamSection , PressAboutUsSection, FrequentlyAskedQuestionsSection, ContactSection};

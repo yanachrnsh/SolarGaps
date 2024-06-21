@@ -13,6 +13,8 @@ import {
 	PartnershipsSection,
 	MissionTeamSection,
 	PressAboutUsSection,
+	FrequentlyAskedQuestionsSection,
+	ContactSection,
 } from './sections';
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
 			<PartnershipsSection />
 			<MissionTeamSection />
 			<PressAboutUsSection />
+			<FrequentlyAskedQuestionsSection />
+			<ContactSection />
 		</div>
 	);
 }

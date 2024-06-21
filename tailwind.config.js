@@ -9,6 +9,7 @@ export default {
 				'light-secondary': '#E0E0E9',
 				'dark-primary': '#000000',
 				'dark-secondary': '#010101',
+				'background-primary': '#111111',
 				'brand-yellow': '#F9CD56',
 				'brand-yellow-secondary': '#FFC423',
 				'brand-grey': '#66666B',
@@ -51,6 +52,7 @@ export default {
 			maxWidth: {
 				128: '32rem',
 			},
+			
 		},
 	},
 	plugins: [],

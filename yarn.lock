@@ -483,6 +483,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formspark/use-formspark@npm:^0.1.39":
+  version: 0.1.39
+  resolution: "@formspark/use-formspark@npm:0.1.39"
+  dependencies:
+    whatwg-fetch: ^3.6.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: e58bf800a3fbb8f45ea23e0fb5007b22b9bcf8baa270bc8736b7c899f1833d3b51a3fbdbfe02c7b4ab590bd9e124fd36b43fd6e5a3f9ba3371df0980be5bffa7
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.14":
   version: 0.11.14
   resolution: "@humanwhocodes/config-array@npm:0.11.14"
@@ -1790,6 +1801,26 @@ __metadata:
   version: 4.3.7
   resolution: "fraction.js@npm:4.3.7"
   checksum: e1553ae3f08e3ba0e8c06e43a3ab20b319966dfb7ddb96fd9b5d0ee11a66571af7f993229c88ebbb0d4a816eb813a24ed48207b140d442a8f76f33763b8d1f3f
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^11.2.11":
+  version: 11.2.11
+  resolution: "framer-motion@npm:11.2.11"
+  dependencies:
+    tslib: ^2.4.0
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: a315e7f36eddf78d7a0a6edfb768e7de235bc34cffe4dabd294e7170646c1b4e2d8ff12797e6602ace8b232648196735d396b5e11d66b4b2ddb53b60d90132c0
   languageName: node
   linkType: hard
 
@@ -3155,6 +3186,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "solargaps@workspace:."
   dependencies:
+    "@formspark/use-formspark": ^0.1.39
     "@types/react": ^18.2.66
     "@types/react-dom": ^18.2.22
     "@types/react-slick": ^0.23.13
@@ -3165,6 +3197,7 @@ __metadata:
     eslint: ^8.57.0
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-react-refresh: ^0.4.6
+    framer-motion: ^11.2.11
     postcss: ^8.4.38
     prettier: 3.3.1
     react: ^18.2.0
@@ -3402,6 +3435,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.4.0":
+  version: 2.6.3
+  resolution: "tslib@npm:2.6.3"
+  checksum: 74fce0e100f1ebd95b8995fbbd0e6c91bdd8f4c35c00d4da62e285a3363aaa534de40a80db30ecfd388ed7c313c42d930ee0eaf108e8114214b180eec3dbe6f5
+  languageName: node
+  linkType: hard
+
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0
   resolution: "type-check@npm:0.4.0"
@@ -3523,6 +3563,13 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 79620413e45804494bedb81f2b78b48ca1d26fb026894a114a2f40cb1a3ad9b6783e777bc8969a51f8711e168b4db93a9563a5af027c80eecf000ef9b675a3be
+  languageName: node
+  linkType: hard
+
+"whatwg-fetch@npm:^3.6.2":
+  version: 3.6.20
+  resolution: "whatwg-fetch@npm:3.6.20"
+  checksum: c58851ea2c4efe5c2235f13450f426824cf0253c1d45da28f45900290ae602a20aff2ab43346f16ec58917d5562e159cd691efa368354b2e82918c2146a519c5
   languageName: node
   linkType: hard
 

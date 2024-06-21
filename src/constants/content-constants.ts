@@ -418,3 +418,61 @@ export const pressAboutUsSection = {
 		},
 	],
 };
+
+// TODO:ipdate descriptio
+
+export const frequentlyAskedQuestionsSection = {
+	header: 'Press About us',
+	cards: [
+		{
+			title: 'How does SolarGaps work?',
+			description:
+				'Please fill out the form “GET A QUOTE" on our website (be sure to specify the size of the window on which you are going to install SolarGaps facade blinds). We will send you a price estimation by mail.',
+		},
+		{
+			title: 'How can I buy SolarGaps?',
+			description:
+				'Please fill out the form “GET A QUOTE" on our website (be sure to specify the size of the window on which you are going to install SolarGaps facade blinds). We will send you a price estimation by mail.',
+		},
+		{
+			title: 'How much energy will it generate?',
+			description:
+				'Please fill out the form “GET A QUOTE" on our website (be sure to specify the size of the window on which you are going to install SolarGaps facade blinds). We will send you a price estimation by mail.',
+		},
+		{
+			title: 'How much will I save with SolarGaps?',
+			description:
+				'Please fill out the form “GET A QUOTE" on our website (be sure to specify the size of the window on which you are going to install SolarGaps facade blinds). We will send you a price estimation by mail.',
+		},
+		{
+			title: 'How long is the warranty period?',
+			description:
+				'Please fill out the form “GET A QUOTE" on our website (be sure to specify the size of the window on which you are going to install SolarGaps facade blinds). We will send you a price estimation by mail.',
+		},
+		{
+			title: 'What is an inverter and why do I need it?',
+			description:
+				'Please fill out the form “GET A QUOTE" on our website (be sure to specify the size of the window on which you are going to install SolarGaps facade blinds). We will send you a price estimation by mail.',
+		},
+		{
+			title: 'Do I need to buy the inverter and how much does it cost?',
+			description:
+				'Please fill out the form “GET A QUOTE" on our website (be sure to specify the size of the window on which you are going to install SolarGaps facade blinds). We will send you a price estimation by mail.',
+		},
+		{
+			title: 'Can I buy a home battery for energy storage?',
+			description:
+				'Please fill out the form “GET A QUOTE" on our website (be sure to specify the size of the window on which you are going to install SolarGaps facade blinds). We will send you a price estimation by mail.',
+		},
+	],
+};
+
+export const contactSection = {
+	header: 'Contact',
+	title: 'Any questions?',
+	inputPlaceholder: {
+		name: 'YOUR NAME',
+		email: 'YOUR EMAIL',
+		message: 'YOUR MESSAGE',
+	},
+};
