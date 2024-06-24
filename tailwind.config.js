@@ -47,6 +47,7 @@ export default {
 			},
 			screens: {
 				xs: '375px',
+				'3xl': '1600px',
 				// 'sm': '640px',
 				// // => @media (min-width: 640px) { ... }
 
@@ -63,6 +64,9 @@ export default {
 				// // => @media (min-width: 1536px) { ... }
 			},
 			letterSpacing: {},
+			gridTemplateColumns:{
+				"awards": "repeat(5, minmax(224px, 1fr))",
+			}
 		},
 	},
 	plugins: [],

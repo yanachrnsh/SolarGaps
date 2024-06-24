@@ -9,7 +9,7 @@ import { SectionHeader } from '../components/section-header/section-header.compo
 
 export const ForHomeSection = () => {
 	const { header, paragraph } = forHomeSection;
-	const settings = {
+	const settingsLg = {
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
@@ -18,22 +18,39 @@ export const ForHomeSection = () => {
 		prevArrow: <SamplePrevArrow />,
 	};
 
+	const settings = {
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1.5,
+		slidesToScroll: 1,
+		nextArrow: <SampleNextArrow />,
+		prevArrow: <SamplePrevArrow />,
+	};
+
 	return (
 		<section className={styles.sectionLayout}>
-			<div className="flex pb-12">
-				<div className="flex-40">
+			<div className={` ${styles.flexSection} pb-12`}>
+				<div className={styles.sectionLeft}>
 					<SectionHeader header={header} headerStyles={`${styles.paddings.headerSection}`} />
 				</div>
 
-				<p className="flex-60 text-base font-semibold text-light-secondary">{paragraph}</p>
+				<p className={`${styles.sectionRight} text-base font-semibold tracking-tight text-light-secondary`}>{paragraph}</p>
 			</div>
-			<div className="slider-container w-full">
+			<div className="slider-container w-full lg:hidden">
 				<Slider {...settings}>
 					{forHomeSection.cards.map((item: ForHomeCardProps) => (
 						<ForHomeCard title={item.title} img={item.img} subtitle={item.subtitle} />
 					))}
 				</Slider>
 			</div>
+			<div className="hidden lg:block lg:slider-container lg:w-full">
+				<Slider {...settingsLg}>
+					{forHomeSection.cards.map((item: ForHomeCardProps) => (
+						<ForHomeCard title={item.title} img={item.img} subtitle={item.subtitle} />
+					))}
+				</Slider>
+			</div>
+
 		</section>
 	);
 };
@@ -49,9 +66,9 @@ const ForHomeCard: FC<ForHomeCardProps> = ({ title, img, subtitle }) => {
 };
 
 interface SampleArrowProps {
-	className: string;
-	style: React.CSSProperties;
-	onClick: () => void;
+	className?: string;
+	style?: React.CSSProperties;
+	onClick?: () => void;
 }
 
 function SampleNextArrow({ className, style, onClick }: SampleArrowProps) {
