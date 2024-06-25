@@ -28,6 +28,7 @@ import {
 	imgYankoDesign,
 	imgTechCrunch,
 	imgInterSolar,
+	bgBuildingXs,
 } from '../assets';
 
 export const navLinks = [
@@ -79,7 +80,8 @@ export const heroSection = {
 };
 
 export const quoteSection = {
-	quote: `“The idea to combine solar panels and blinds struck me when I saw sunflowers in the field turning to face the sun.\nWith my invention, I wanted to claim that everyone is responsible for saving our planet.”`,
+	quote1: '“The idea to combine solar panels and blinds struck me when I saw sunflowers in the field turning to face the sun.',
+	quote2: 'With my invention, I wanted to claim that everyone is responsible for saving our planet.”',
 	author: 'YEVGEN ERIK, CEO',
 };
 
@@ -254,6 +256,7 @@ export const forHomeSection = {
 
 export const imageSection = {
 	img: { src: `${bgBuilding}`, description: 'Building with vertical solar' },
+	imgxs: { src: `${bgBuildingXs}`, description: 'Building with vertical solar' },
 };
 
 export type ExampleTableRow = (typeof forOfficeSection.exampleCard.table)[0];
@@ -478,7 +481,6 @@ export const contactSection = {
 };
 
 export const footer = {
-	address: "2810 N Church St\nPMB 32367\nWilmington, Delaware 19802-4447",
-	email: " hello@solargaps.com"
-
-}
+	address: '2810 N Church St\nPMB 32367\nWilmington, Delaware 19802-4447',
+	email: ' hello@solargaps.com',
+};

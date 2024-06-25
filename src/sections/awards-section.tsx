@@ -5,6 +5,8 @@ import { FC } from 'react';
 import { Icon } from '../components/icon/icon.component';
 import Slider from 'react-slick';
 
+// TODO: change arrows
+
 export const AwardsSection = () => {
 	const { header, cards } = awardsSection;
 	const settings = {
@@ -23,7 +25,7 @@ export const AwardsSection = () => {
 					<AwardCard key={award.title} title={award.title} subtitle={award.subtitle} icon={award.icon} />
 				))}
 			</div>
-			<Slider {...settings} className="3xl:hidden block">
+			<Slider {...settings} className="3xl:hidden block max-h-[260px]">
 				{cards.map(item => (
 					<AwardCard key={item.title} title={item.title} subtitle={item.subtitle} icon={item.icon} />
 				))}
@@ -34,7 +36,7 @@ export const AwardsSection = () => {
 
 const AwardCard: FC<AwardCardType> = ({ title, subtitle, icon }) => {
 	return (
-		<div className="box-border flex h-[16.5rem] min-w-[288px] max-w-[224px] flex-col justify-between rounded-xl border border-brand-grey px-8 pb-8 pt-12 lg:h-80">
+		<div className="box-border flex h-[16.5rem] max-w-[288px] mix-w-[224px] flex-col justify-between rounded-xl border border-brand-grey px-8 pb-8 pt-12 lg:h-80">
 			<Icon icon={icon} styles="w-max" />
 			<div className="gap-px">
 				<h4 className="text-base font-semibold">{title}</h4>

@@ -6,6 +6,7 @@ import iconCO2 from './icon-co2.svg';
 import iconAuto from './icon-auto.svg';
 import heroBgImg from './hero-bg-img.svg';
 import bgBuilding from './bg-building.jpeg';
+import bgBuildingXs from './background-building-xs.jpg';
 import videoPlaceholder from './video-placeholder.png';
 import awardsAmazon from './awards-amazon.svg';
 import awardsCop from './awards-cop.svg';
@@ -38,6 +39,7 @@ export {
 	iconAuto,
 	heroBgImg,
 	bgBuilding,
+	bgBuildingXs,
 	videoPlaceholder,
 	awardsAmazon,
 	awardsCop,

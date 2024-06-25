@@ -2,7 +2,6 @@ import { FC } from 'react';
 import { styles } from '../../constants/style-constants';
 import { navLinks } from '../../constants/content-constants';
 
-
 export const Navbar = () => {
 	return (
 		<nav>
@@ -27,7 +26,7 @@ const Link: FC<LinkProps> = ({ title, id }) => {
 	return (
 		<>
 			<a href={`#${id}`} className={styles.navLink}>
-				<span className="text-xs font-extrabold tracking-widest">{title.toUpperCase()}</span>
+				<span className="text-xxs font-extrabold tracking-widest">{title.toUpperCase()}</span>
 			</a>
 		</>
 	);

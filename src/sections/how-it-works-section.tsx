@@ -9,7 +9,7 @@ export const HowItWorksSection = () => {
 			<SectionHeader header={header} headerStyles={`${styles.paddings.headerSection}`} />
 			<div className={styles.flexSection}>
 				<div className={styles.sectionLeft}>
-					<p className="text-base tracking-wide">{paragraph}</p>
+					<p className="text-sm xl:text-base font-semibold tracking-wide">{paragraph}</p>
 				</div>
 				{/* TODO: add video  */}
 				<div className={styles.sectionRight}>

@@ -25,10 +25,12 @@ export const ForOfficeSection = () => {
 					</div>
 				</div>
 				{/* TODO: Table*/}
-				<div className={`${styles.sectionRight} rounded-l-[1.25rem] border border-r-0 border-brand-grey pb-12 pl-12 pr-9 pt-8 sm:pr-6 lg:pr-9`}>
+				<div
+					className={`${styles.sectionRight} rounded-l-[1.25rem] border border-r-0 border-brand-grey pb-12 pl-12 pr-9 pt-8 sm:pr-6 lg:pr-9`}
+				>
 					<div>
 						<h4 className="pb-6 text-2xl font-semibold">{exampleCard.title}</h4>
-						<div className="flex gap-9">
+						<div className="flex gap-9 flex-wrap lg:flex-nowrap	">
 							<img
 								src={exampleCard.img.src}
 								alt={exampleCard.img.description}
@@ -39,7 +41,7 @@ export const ForOfficeSection = () => {
 								{exampleCard.table.map((row, index) => (
 									<TableRow
 										row={row}
-										categoryStyle={index === exampleCard.table.length - 1 ? 'text-base-l font-semibold ' : ''}
+										categoryStyle={index === exampleCard.table.length - 1 ? 'text-base font-semibold ' : ''}
 										informationStyle={
 											index === exampleCard.table.length - 1 ? 'text-brand-yellow text-xl font-bold ' : ''
 										}

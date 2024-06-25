@@ -51,7 +51,7 @@ interface ProductCardProps {
 const ProductCard: FC<ProductCardProps> = ({ product, cardStyle, imgStyle, headerStyle }) => {
 	return (
 		<div className={`relative rounded-xl bg-brand-grey-secondary px-8 py-8 ${cardStyle} `}>
-			<h3 className={`"text-start text-brand-yellow" text-2xl font-semibold ${headerStyle}`}>{product.title}</h3>
+			<h3 className={`${styles.h3} ${headerStyle}`}>{product.title}</h3>
 			<img
 				src={product.img.src}
 				alt={product.img.description}
