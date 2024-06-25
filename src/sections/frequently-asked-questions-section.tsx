@@ -17,10 +17,10 @@ export const FrequentlyAskedQuestionsSection = () => {
 	return (
 		<section className={styles.sectionLayout}>
 			<div className="flex">
-				<div className="flex-40">
+				<div className={styles.sectionLeft}>
 					<SectionHeader header={header} />
 				</div>
-				<div className="flex-60">
+				<div className={styles.sectionRight}>
 					<div className="grid grid-cols-1">
 						{cards.map((card, index) => (
 							<Collapse
@@ -49,7 +49,7 @@ interface QuestionCardProps {
 }
 
 // TODO: fix Collapse component add animation
-// TODO: add icon 
+// TODO: add icon
 
 const Collapse: React.FC<QuestionCardProps> = ({ card, toggleCollapse: toggleCollapse, isCollapsed, index }) => {
 	const variants = {
@@ -57,9 +57,9 @@ const Collapse: React.FC<QuestionCardProps> = ({ card, toggleCollapse: toggleCol
 		closed: { maxHeight: '0', transition: { duration: 0 } },
 	};
 	return (
-		<div className="py-8 border-b first:pt-0">
+		<div className="border-b py-8 first:pt-0">
 			<button
-				className={`bg-none border-none w-full cursor-pointer overflow-hidden text-start font-semibold text-2xl ${isCollapsed ? '' : 'pb-6 '}`}
+				className={`w-full cursor-pointer overflow-hidden border-none bg-none text-start text-2xl font-semibold ${isCollapsed ? '' : 'pb-6'}`}
 				onClick={() => toggleCollapse(index)}
 			>
 				{card.title}

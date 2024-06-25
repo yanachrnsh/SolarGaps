@@ -19,14 +19,14 @@ export default {
 				'brand-green-primary': '#00FFA3',
 			},
 			fontSize: {
-				xxs: ['0.75rem', '1.25rem'], //12px - 20px
-				xs: ['0.75rem', '1.5rem'], //12px - 24px
-				sm: ['0.875rem'], //14px
-				'text-base-l': ['1rem', '1.25em'], //16px - 20px
+				xxs: ['0.75rem', '1.25rem'], //12px - 20px keep this 
+				xs: ['0.75rem', '1.5rem'], //12px - 24px 
+				sm: ['0.875rem'], //14px 14 24 
+				'text-base-l': ['1rem', '1.25em'], //16px - 20px TODO: keep 16 24 and remove 16 20, check 16 16 in button 
 				'3xl': ['1.75rem', '2.55rem'], //28px - 41px
 				'3.5xl': ['2rem', '2rem'], //32px
 				'4xl': ['2.25rem', '2.5rem'], //36px - 40px
-				'5xl': ['3rem', '4rem'], //48px - 60px
+				'5xl': ['3rem', '4rem'], //48px - 60px - TODO: keep this 
 				'6xl': ['3rem', '3.75rem'], //48px - 64px
 				'8xl': ['5.75rem', '7rem'], //92px - 112px
 			},
@@ -39,8 +39,8 @@ export default {
 			},
 			flex: {
 				20: '1 1 20%',
-				40: '1 1 40%',
-				60: '1 1 60%',
+				40: '1 1 32%',
+				60: '1 1 59%',
 			},
 			maxWidth: {
 				128: '32rem',

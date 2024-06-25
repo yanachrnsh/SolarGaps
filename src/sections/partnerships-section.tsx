@@ -11,13 +11,13 @@ export const PartnershipsSection = () => {
 		<section className={styles.sectionLayout}>
 			<SectionHeader header={header} headerStyles={`${styles.paddings.headerSection}`} />
 
-			<div className="flex">
-				<div className="flex-40 pb-[25.75rem]">
-					<p className="text-base max-w-[70%] pb-6">{paragraph1}</p>
-					<p className="text-base max-w-[70%]">{paragraph2}</p>
+			<div className={styles.flexSection}>
+				<div className={`${styles.sectionLeft} pb-[25.75rem]`}>
+					<p className="pb-6 text-base">{paragraph1}</p>
+					<p className="text-base">{paragraph2}</p>
 				</div>
-				<div className="flex-60 grid grid-cols-2 grid-rows-2 gap-y-8 gap-x-12">
-					<div className='flex'>
+				<div className={`${styles.sectionRight} grid grid-cols-2 grid-rows-2 gap-x-12 gap-y-8`}>
+					<div className="flex">
 						<img src={img.src} alt="" className="w-full" />
 						<span className="sr-only">{img.description}</span>
 					</div>
@@ -46,11 +46,11 @@ type PartnershipsCardType = {
 const PartnershipsCard: FC<PartnershipsCardType> = ({ card }) => {
 	const { title, description, button } = card;
 	return (
-		<div className="flex flex-col gap-3 border border-brand-grey p-8 justify-between rounded-lg">
-			<h5 className="text-2xl text-brand-yellow font-semibold">{title}</h5>
+		<div className="flex flex-col justify-between gap-3 rounded-lg border border-brand-grey p-8">
+			<h5 className="text-2xl font-semibold text-brand-yellow">{title}</h5>
 
-			<span className="text-base ">{description}</span>
-			<a href="#" className="text-base text-brand-yellow pt-3 font-semibold">
+			<span className="text-base">{description}</span>
+			<a href="#" className="pt-3 text-base font-semibold text-brand-yellow">
 				{button}
 			</a>
 		</div>

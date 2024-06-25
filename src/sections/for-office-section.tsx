@@ -11,9 +11,9 @@ export const ForOfficeSection = () => {
 		<section className={`${styles.sectionLayout} pr-0 lg:pr-0`}>
 			{/* TODO: rename title to header */}
 			<SectionHeader header={header} headerStyles={`${styles.paddings.headerSection}`} />
-			<div className="flex">
-				<div className="flex-40">
-					<div className="max-w-[80%] text-start">
+			<div className={styles.flexSection}>
+				<div className={styles.sectionLeft}>
+					<div className="text-start">
 						<h2 className="pb-6 text-5xl font-semibold tracking-tight text-brand-yellow">{title}</h2>
 						<p className="pb-8 text-base font-semibold">{paragraph}</p>
 						<div className="flex gap-x-6 pb-[10.75rem]">
@@ -25,7 +25,7 @@ export const ForOfficeSection = () => {
 					</div>
 				</div>
 				{/* TODO: Table*/}
-				<div className="flex-60 rounded-l-[1.25rem] border border-r-0 border-brand-grey pb-12 pl-12 pr-9 pt-8 sm:pr-6 lg:pr-9">
+				<div className={`${styles.sectionRight} rounded-l-[1.25rem] border border-r-0 border-brand-grey pb-12 pl-12 pr-9 pt-8 sm:pr-6 lg:pr-9`}>
 					<div>
 						<h4 className="pb-6 text-2xl font-semibold">{exampleCard.title}</h4>
 						<div className="flex gap-9">

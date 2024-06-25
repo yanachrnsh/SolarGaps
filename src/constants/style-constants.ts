@@ -10,9 +10,9 @@ export const styles = {
 	sectionHero: `mx-auto max-w-[120rem] px-6 py-12 pt-34 lg:py-32 lg:px-14`,
 	sectionImgBg: 'bg-no-repeat bg-cover bg-center',
 
-	flexSection: 'flex justify-between flex-wrap gap-12 lg:gap-0',
-	sectionRight: 'w-full lg:w-[59%]',
-	sectionLeft: ' w-full lg:w-[39%]',
+	flexSection: 'flex justify-between flex-wrap gap-12',
+	sectionRight: 'w-full  lg:flex-60',
+	sectionLeft: ' w-full  lg:flex-40',
 
 	h1: `text-6xl lg:text-8xl font-semibold -tracking-[0.012em]`,
 	h2: 'text-4xl font-semibold -tracking-wider pb-12',

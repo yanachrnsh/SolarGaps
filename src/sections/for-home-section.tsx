@@ -92,3 +92,5 @@ function SamplePrevArrow({ className, style, onClick }: SampleArrowProps) {
 		/>
 	);
 }
+
+

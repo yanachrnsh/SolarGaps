@@ -6,18 +6,18 @@ export const MissionTeamSection = () => {
 	const { header, title, paragraph1, paragraph2, cards } = missionTeamSection;
 	return (
 		<section className={styles.sectionLayout}>
-			<div className="flex">
-				<div className="flex-40">
+			<div className={styles.flexSection}>
+				<div className={styles.sectionLeft}>
 					<SectionHeader header={header} />
 				</div>
 
-				<div className="flex flex-col gap-12 flex-60">
-					<h2 className="text-5xl font-semibold tracking-tight text-brand-yellow pb-6">{title}</h2>
+				<div className={`${styles.sectionRight} flex flex-col gap-12`}>
+					<h2 className="pb-6 text-5xl font-semibold tracking-tight text-brand-yellow">{title}</h2>
 					<div className="flex justify-between gap-16">
-						<p className="flex-1 text-base font-semibold ">{paragraph1}</p>
-						<p className="flex-1 text-base font-semibold ">{paragraph2}</p>
+						<p className="flex-1 text-base font-semibold">{paragraph1}</p>
+						<p className="flex-1 text-base font-semibold">{paragraph2}</p>
 					</div>
-					<div className="grid grid-cols-3 gap-10 ">
+					<div className="grid grid-cols-3 gap-10">
 						{cards.map(card => (
 							<MissionTeamCard key={card.title} card={card} />
 						))}
@@ -31,9 +31,9 @@ export const MissionTeamSection = () => {
 const MissionTeamCard = ({ card }: { card: MissionTeamCardType }) => {
 	const { title, subtitle, img } = card;
 	return (
-		<div className={`pt-[20.75rem] flex flex-col relative`}>
-			<img src={img.src} alt={img.description} className="rounded-xl absolute top-0 object-cover w-full h-[82%] left-0 basis-2/6" />
-			<h4 className="text-xl font-semibold pb-2">{title}</h4>
+		<div className={`relative flex flex-col pt-[20.75rem]`}>
+			<img src={img.src} alt={img.description} className="absolute left-0 top-0 h-[82%] w-full basis-2/6 rounded-xl object-cover" />
+			<h4 className="pb-2 text-xl font-semibold">{title}</h4>
 			<span className="text-base text-brand-grey-tertiary">{subtitle}</span>
 		</div>
 	);

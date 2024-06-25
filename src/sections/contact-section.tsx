@@ -34,15 +34,15 @@ export const ContactSection = () => {
 	return (
 		<section className={styles.sectionLayout}>
 			<div className="flex">
-				<div className="flex-40">
+				<div className={styles.sectionLeft}>
 					<SectionHeader header={header} />
 				</div>
-				<div className="flex-60">
-					<h2 className="text-5xl font-semibold tracking-tight text-brand-yellow pb-6">{title}</h2>
+				<div className={styles.sectionRight}>
+					<h2 className="pb-6 text-5xl font-semibold tracking-tight text-brand-yellow">{title}</h2>
 					<form onSubmit={onSubmit} className="flex flex-col gap-9">
-						<div className="flex justify-between flex-wrap">
-							<div className="w-[48%] ">
-								<div className="max-h-72 items-stretch ">
+						<div className="flex flex-wrap justify-between">
+							<div className="w-[48%]">
+								<div className="max-h-72 items-stretch">
 									<input
 										type="text"
 										id="name"
@@ -54,8 +54,8 @@ export const ContactSection = () => {
 									/>
 								</div>
 							</div>
-							<div className="w-[48%] ">
-								<div className="max-h-72 items-stretch ">
+							<div className="w-[48%]">
+								<div className="max-h-72 items-stretch">
 									<input
 										value={contacts.email}
 										type="email"
