@@ -11,7 +11,7 @@ export const HeroSection = () => {
 	return (
 		<section className={`bg-background-hero ${styles.sectionImgBg}`}>
 			<div className={`${styles.sectionHero} flex`}>
-				<div className="w-full text-start lg:w-[70%]">
+				<div className="w-full text-start lg:w-[60%]">
 					<h1 className={styles.h1}>{header}</h1>
 
 					<div className="mt-10 flex gap-x-6">
