@@ -4,7 +4,7 @@ export const SectionHeader = ({ header, headerStyles }: { header: string; header
 	return (
 		<div className="flex items-start gap-3">
 			<span className="text-4xl font-semibold text-brand-yellow">/</span>
-			<h2 className={`${styles.h2} ${headerStyles}`}>{header}</h2>
+			<h3 className={`${styles.h3} ${headerStyles}`}>{header}</h3>
 		</div>
 	);
 };

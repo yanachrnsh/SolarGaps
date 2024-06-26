@@ -8,15 +8,15 @@ import { FC } from 'react';
 export const ForOfficeSection = () => {
 	const { header, title, button, paragraph, exampleCard } = forOfficeSection;
 	return (
-		<section className={`${styles.sectionLayout} pr-0 lg:pr-0`}>
+		<section className={`${styles.sectionLayout} pr-6 xl:pr-0`}>
 			{/* TODO: rename title to header */}
 			<SectionHeader header={header} headerStyles={`${styles.paddings.headerSection}`} />
 			<div className={styles.flexSection}>
 				<div className={styles.sectionLeft}>
 					<div className="text-start">
-						<h2 className="pb-6 text-5xl font-semibold tracking-tight text-brand-yellow">{title}</h2>
-						<p className="pb-8 text-base font-semibold">{paragraph}</p>
-						<div className="flex gap-x-6 pb-[10.75rem]">
+						<h2 className={`${styles.h2} pb-6 text-brand-yellow`}>{title}</h2>
+						<p className="pb-6 text-sm font-semibold xl:pb-8 xl:text-base">{paragraph}</p>
+						<div className="flex gap-x-6 pb-3 xl:pb-[10.75rem]">
 							<AnchorButton href="#">
 								<span>{button.toUpperCase()}</span>
 								<IoArrowForward size={24} className={`${hoverStyles.transition} group-hover:translate-x-2`} />
@@ -26,24 +26,26 @@ export const ForOfficeSection = () => {
 				</div>
 				{/* TODO: Table*/}
 				<div
-					className={`${styles.sectionRight} rounded-l-[1.25rem] border border-r-0 border-brand-grey pb-12 pl-12 pr-9 pt-8 sm:pr-6 lg:pr-9`}
+					className={`${styles.sectionRight} rounded-l-[1.25rem] rounded-r-[1.25rem] border border-brand-grey p-5 sm:pr-6 lg:rounded-r-none lg:pb-12 lg:pl-12 lg:pr-9 lg:pt-8 xl:border-r-0`}
 				>
 					<div>
-						<h4 className="pb-6 text-2xl font-semibold">{exampleCard.title}</h4>
-						<div className="flex gap-9 flex-wrap lg:flex-nowrap	">
+						<h5 className={`${styles.h5} pb-6`}>{exampleCard.title}</h5>
+						<div className="flex flex-wrap gap-9 lg:flex-nowrap">
 							<img
 								src={exampleCard.img.src}
 								alt={exampleCard.img.description}
 								className="basis-2/6 rounded-xl object-cover"
 							/>
 
-							<ul className="basis-4/6">
+							<ul className="flex-1 lg:basis-4/6">
 								{exampleCard.table.map((row, index) => (
 									<TableRow
 										row={row}
-										categoryStyle={index === exampleCard.table.length - 1 ? 'text-base font-semibold ' : ''}
+										categoryStyle={index === exampleCard.table.length - 1 ? 'text-sm lg:text-base font-semibold ' : ''}
 										informationStyle={
-											index === exampleCard.table.length - 1 ? 'text-brand-yellow text-xl font-bold ' : ''
+											index === exampleCard.table.length - 1
+												? 'text-base text-brand-yellow lg:text-xl font-bold '
+												: ''
 										}
 									/>
 								))}
@@ -68,7 +70,7 @@ const TableRow: FC<TableRowProps> = ({ row, categoryStyle, informationStyle }) =
 			className={`flex justify-between border-b border-brand-grey pb-[1.32rem] pt-[1.43rem] text-brand-grey-tertiary first:pt-0 last:border-b-0 last:pb-0`}
 		>
 			<span className={`text-sm last:text-xl last:font-bold last:text-brand-yellow ${categoryStyle}`}>{row.category}</span>
-			<h5 className={`font-semibold ${informationStyle}`}>{row.information}</h5>
+			<h6 className={`text-light-primary font-semibold ${informationStyle}`}>{row.information}</h6>
 		</li>
 	);
 };

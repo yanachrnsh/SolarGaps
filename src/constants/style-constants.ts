@@ -16,9 +16,11 @@ export const styles = {
 	sectionLeft: ' w-full  xl:flex-40',
 
 	h1: `text-5xl xl:text-8xl font-semibold -tracking-[0.012em]`,
-	h2: 'text-2xl xl:text-4xl font-semibold -tracking-wider pb-8 xl:pb-12',
-	h3:'text-brand-yellow text-xl text-center xl:text-start xl:text-2xl font-semibold ',
-	h4: 'text-sm xl:text-xl font-semibold tracking-tight',
+	h2: 'text-3xl xl:text-5xl font-semibold tracking-tight',
+	h3: 'text-2xl xl:text-4xl font-semibold -tracking-wider pb-8 xl:pb-12',
+	h4: 'text-brand-yellow text-xl text-center xl:text-start xl:text-2xl font-semibold ',
+	h5: 'text-base xl:text-2xl font-semibold tracking-tight',
+	h6: 'text-sm xl:text-xl font-semibold tracking-tight',
 	// h4: text-base font-semibold
 
 	paddings: {
@@ -26,7 +28,7 @@ export const styles = {
 	},
 
 	input: `outline-none align-middle p-6	m-0 min-w-16 bg-background-primary rounded-xl border border-brand-grey  w-full placeholder:font-semibold placeholder:text-light-secondary`,
-	button: `flex gap-3 group rounded-lg bg-brand-yellow px-[4.5rem] py-5 text-xxs font-extrabold  text-dark-secondary shadow-sm  hover:bg-brand-yellow-secondary hover:drop-shadow-hero max-h-16`,
+	button: `flex gap-3 group rounded-lg bg-brand-yellow px-[4.5rem] py-5 text-xxs font-extrabold  text-dark-secondary shadow-sm  hover:bg-brand-yellow-secondary hover:drop-shadow-hero max-h-16 w-full max-w-[20.4rem] justify-center items-center`,
 };
 
 export const hoverStyles = {

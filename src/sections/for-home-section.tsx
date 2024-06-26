@@ -31,36 +31,38 @@ export const ForHomeSection = () => {
 
 	return (
 		<section className={styles.sectionLayout}>
-			<div className={` ${styles.flexSection} pb-12`}>
+			<div className={` ${styles.flexSection} pb-6 xl:pb-12`}>
 				<div className={styles.sectionLeft}>
 					<SectionHeader header={header} />
 				</div>
 
-				<p className={`${styles.sectionRight} text-base font-semibold tracking-tight text-light-secondary`}>{paragraph}</p>
+				<p className={`${styles.sectionRight} test-sm font-semibold tracking-tight text-light-secondary xl:text-base`}>
+					{paragraph}
+				</p>
 			</div>
-			<div className="slider-container w-full max-h-[260px] xl:hidden">
-				<Slider {...settings}>
-					{forHomeSection.cards.map((item: ForHomeCardProps) => (
-						<ForHomeCard title={item.title} img={item.img} subtitle={item.subtitle} />
-					))}
-				</Slider>
-			</div>
-			<div className="xl:slider-container hidden xl:block xl:w-full">
-				<Slider {...settingsLg}>
-					{forHomeSection.cards.map((item: ForHomeCardProps) => (
-						<ForHomeCard title={item.title} img={item.img} subtitle={item.subtitle} />
-					))}
-				</Slider>
-			</div>
+			<Slider {...settings} className="slider-container max-h-[16.25rem] w-full xl:hidden xl:max-h-[29rem]">
+				{forHomeSection.cards.map((item: ForHomeCardProps) => (
+					<ForHomeCard title={item.title} img={item.img} subtitle={item.subtitle} />
+				))}
+			</Slider>
+			<Slider {...settingsLg} className="xl:slider-container hidden max-h-[16.25rem] xl:block xl:max-h-[29rem] xl:w-full">
+				{forHomeSection.cards.map((item: ForHomeCardProps) => (
+					<ForHomeCard title={item.title} img={item.img} subtitle={item.subtitle} />
+				))}
+			</Slider>
 		</section>
 	);
 };
 
 const ForHomeCard: FC<ForHomeCardProps> = ({ title, img, subtitle }) => {
 	return (
-		<div className={`relative flex min-w-[224px] flex-col pt-[11.5rem] xl:pt-[28rem]`}>
-			<img src={img.src} alt={img.description} className="absolute left-0 top-0 h-[85%] w-full max-h-[168px] rounded-xl object-cover" />
-			<h4 className={styles.h4}>{title}</h4>
+		<div className={`max-h-[220px]xl:max-h-[29rem] relative flex min-w-[224px] flex-col pt-[11.5rem] xl:pt-[28rem]`}>
+			<img
+				src={img.src}
+				alt={img.description}
+				className="absolute left-0 top-0 h-[85%] max-h-[168px] w-full rounded-xl object-cover xl:max-h-fit"
+			/>
+			<h6 className={styles.h6}>{title}</h6>
 			<span className="text-base text-brand-grey-tertiary">{subtitle}</span>
 		</div>
 	);
