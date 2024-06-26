@@ -36,7 +36,7 @@ export const AwardsSection = () => {
 
 const AwardCard: FC<AwardCardType> = ({ title, subtitle, icon }) => {
 	return (
-		<div className="3xl:w-auto xl:[14.5rem] 3xl:h-[16.5rem] box-border flex w-[14rem] flex-col justify-between rounded-xl border border-brand-grey px-8 pb-8 pt-12 lg:h-80">
+		<div className="3xl:w-auto xl:[14.5rem] 3xl:h-[16.5rem] box-border flex h-[16.25rem] w-[14rem] flex-col justify-between rounded-xl border border-brand-grey px-8 pb-8 pt-12 lg:h-80">
 			<Icon icon={icon} styles="w-max" />
 			<div className="gap-px">
 				<h4 className="text-base font-semibold">{title}</h4>
