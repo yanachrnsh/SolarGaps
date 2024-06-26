@@ -1,6 +1,8 @@
 import { styles } from '../constants/style-constants';
 import { imageSection } from '../constants/content-constants';
 
+// TODO: fix img section 
+
 export const ImageSection = () => {
 	return (
 		<section className={`${styles.sectionLayout} ${styles.sectionImgBg}`}>
