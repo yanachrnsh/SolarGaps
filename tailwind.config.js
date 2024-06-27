@@ -19,16 +19,16 @@ export default {
 				'brand-green-primary': '#00FFA3',
 			},
 			fontSize: {
-				xxs: ['0.75rem', '1.25rem'], //12px - 20px 
-				sm: ['0.875rem', '1.5rem'], //14px -24 
+				xxs: ['0.75rem', '1.25rem'], //12px - 20px
+				sm: ['0.875rem', '1.5rem'], //14px -24
 				// "text-base": ['1rem', '1.5rem'], //16px - 24px
-				'text-base-l': ['1rem', '1.25em'], //16px - 20px TODO: keep 16 24 and remove 16 20, check 16 16 in button 
+				'text-base-l': ['1rem', '1.25em'], //16px - 20px TODO: keep 16 24 and remove 16 20, check 16 16 in button
 				// text-xl: ['1.25rem', '1.75rem'], //20px - 28px
 				// text-2xl: ['1.5rem', '2rem'], //24px - 32px
 				'3xl': ['1.75rem', '2.55rem'], //28px - 41px
 				'3.5xl': ['2rem', '2rem'], //32px
 				'4xl': ['2.25rem', '2.5rem'], //36px - 40px
-				'5xl': ['3rem', '4rem'], //48px - 60px - TODO: keep this 
+				'5xl': ['3rem', '4rem'], //48px - 60px - TODO: keep this
 				'8xl': ['5.75rem', '7rem'], //92px - 112px
 			},
 			backgroundImage: {
@@ -65,9 +65,9 @@ export default {
 				// // => @media (min-width: 1536px) { ... }
 			},
 			letterSpacing: {},
-			gridTemplateColumns:{
-				"awards": "repeat(5, minmax(224px, 1fr))",
-			}
+			gridTemplateColumns: {
+				awards: 'repeat(5, minmax(224px, 1fr))',
+			},
 		},
 	},
 	plugins: [],

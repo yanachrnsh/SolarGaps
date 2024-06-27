@@ -34,7 +34,7 @@ export const ForOfficeSection = () => {
 							<img
 								src={exampleCard.img.src}
 								alt={exampleCard.img.description}
-								className="basis-2/6 rounded-xl object-cover"
+								className="w-full rounded-2xl object-cover xl:basis-2/6"
 							/>
 
 							<ul className="flex-1 lg:basis-4/6">
@@ -70,7 +70,7 @@ const TableRow: FC<TableRowProps> = ({ row, categoryStyle, informationStyle }) =
 			className={`flex justify-between border-b border-brand-grey pb-[1.32rem] pt-[1.43rem] text-brand-grey-tertiary first:pt-0 last:border-b-0 last:pb-0`}
 		>
 			<span className={`text-sm last:text-xl last:font-bold last:text-brand-yellow ${categoryStyle}`}>{row.category}</span>
-			<h6 className={`text-light-primary font-semibold ${informationStyle}`}>{row.information}</h6>
+			<h6 className={`font-semibold text-light-primary ${informationStyle}`}>{row.information}</h6>
 		</li>
 	);
 };

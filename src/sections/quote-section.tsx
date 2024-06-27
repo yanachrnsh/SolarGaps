@@ -6,7 +6,7 @@ export const QuoteSection = () => {
 	return (
 		<section className={styles.sectionLayout}>
 			<div className="flex justify-end pt-6 xl:pt-0">
-				<div className="w-[59%]">
+				<div className="w-full md:w-[59%]">
 					<p className="pb-6 text-xl font-medium -tracking-tight xl:text-3xl">{quote1}</p>
 					<p className="text-xl font-medium -tracking-tight xl:text-3xl">{quote2}</p>
 					<div className="mt-8 flex gap-x-5">

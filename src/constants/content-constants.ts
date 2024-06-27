@@ -310,27 +310,27 @@ export const milestonesSection = {
 	cards: [
 		{
 			year: '2016',
-			description: 'NASA AMES Center\nSingularity University\nFirst Patent Received',
+			description: 'NASA AMES Center Singularity University First Patent Received',
 		},
 		{
 			year: '2017',
-			description: 'Top Silicon Valley Startups HAX Accelerator\nSvief Star Award',
+			description: 'Top Silicon Valley Startups HAX Accelerator Svief Star Award',
 		},
 		{
 			year: '2017',
-			description: 'CE Certification\nDeclaration Of Performance\nDeclaration Of Conformity\nAmazon Innovation Award',
+			description: 'CE Certification Declaration Of Performance Declaration Of Conformity\nAmazon Innovation Award',
 		},
 		{
 			year: '2018',
-			description: 'PCT Patent\nSmarterE Award\nFull-Scale Manufacturing',
+			description: 'PCT Patent SmarterE Award Full-Scale Manufacturing',
 		},
 		{
 			year: '2019',
-			description: 'Horizon 2020 EUR 1M Grant\nGerman Design Award\nKaterva Sustainability Award',
+			description: 'Horizon 2020 EUR 1M Grant German Design Award Katerva Sustainability Award',
 		},
 		{
 			year: '2020',
-			description: 'B2B Product Development\nDubai World Expo 2020\nNaN Arquitectura Award',
+			description: 'B2B Product Development Dubai World Expo 2020 NaN Arquitectura Award',
 		},
 	],
 };
@@ -348,9 +348,9 @@ export const partnershipsSection = {
 			description: 'Global partnership map',
 		},
 		bullets: [
-			{ title: 'Headquarters', iconColor: `brand-yellow` },
-			{ title: 'Manufacturing', iconColor: `brand-blue-primary` },
-			{ title: 'Distributors', iconColor: `brand-green-primary` },
+			{ title: 'Headquarters', iconColor: `text-brand-yellow` },
+			{ title: 'Manufacturing', iconColor: `text-brand-blue-primary` },
+			{ title: 'Distributors', iconColor: `text-brand-green-primary` },
 		],
 		distributor: {
 			title: 'Distributor',

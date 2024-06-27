@@ -12,16 +12,16 @@ export const PartnershipsSection = () => {
 			<SectionHeader header={header} headerStyles={`${styles.paddings.headerSection}`} />
 
 			<div className={styles.flexSection}>
-				<div className={`${styles.sectionLeft} pb-[25.75rem]`}>
-					<p className="pb-6 text-base">{paragraph1}</p>
+				<div className={`${styles.sectionLeft} xl:pb-[25.75rem]`}>
+					<p className="pb-6 text-base font-semibold">{paragraph1}</p>
 					<p className="text-base">{paragraph2}</p>
 				</div>
-				<div className={`${styles.sectionRight} grid grid-cols-2 grid-rows-2 gap-x-12 gap-y-8`}>
+				<div className={`${styles.sectionRight} grid grid-cols-1 gap-6 xl:grid-cols-2 xl:grid-rows-2 xl:gap-x-12 xl:gap-y-8`}>
 					<div className="flex">
-						<img src={img.src} alt="" className="w-full" />
+						<img src={img.src} alt="" className="max-h-[212px] w-full" />
 						<span className="sr-only">{img.description}</span>
 					</div>
-					<div className="flex flex-col gap-10">
+					<div className="flex flex-wrap justify-between gap-10 gap-y-6 self-center md:justify-center xl:flex-col">
 						{bullets.map((bullet, index) => (
 							<BulletRow key={index} bullet={bullet} />
 						))}
@@ -46,10 +46,9 @@ type PartnershipsCardType = {
 const PartnershipsCard: FC<PartnershipsCardType> = ({ card }) => {
 	const { title, description, button } = card;
 	return (
-		<div className="flex flex-col justify-between gap-3 rounded-lg border border-brand-grey p-8">
-			<h5 className="text-2xl font-semibold text-brand-yellow">{title}</h5>
-
-			<span className="text-base">{description}</span>
+		<div className="flex flex-col justify-between gap-3 rounded-lg border border-brand-grey p-6 xl:p-8">
+			<h4 className={`${styles.h4} text-brand-yellow`}>{title}</h4>
+			<span className="text-sm xl:text-base">{description}</span>
 			<a href="#" className="pt-3 text-base font-semibold text-brand-yellow">
 				{button}
 			</a>
@@ -57,7 +56,6 @@ const PartnershipsCard: FC<PartnershipsCardType> = ({ card }) => {
 	);
 };
 
-// TODO: type change for Bullets
 type BulletRowType = {
 	bullet: {
 		title: string;
@@ -65,11 +63,11 @@ type BulletRowType = {
 	};
 };
 
-// TODO: fix colors of bullets
 const BulletRow: FC<BulletRowType> = ({ bullet }) => {
+	console.log(bullet);
 	return (
 		<div className="flex gap-4">
-			<FaCircle className={` text-${bullet.iconColor} `} size={24} />
+			<FaCircle className={` ${bullet.iconColor} `} size={24} />
 			<span className="text-base text-light-secondary">{bullet.title}</span>
 		</div>
 	);

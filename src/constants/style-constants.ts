@@ -18,10 +18,10 @@ export const styles = {
 	h1: `text-5xl xl:text-8xl font-semibold -tracking-[0.012em]`,
 	h2: 'text-3xl xl:text-5xl font-semibold tracking-tight',
 	h3: 'text-2xl xl:text-4xl font-semibold -tracking-wider pb-8 xl:pb-12',
-	h4: 'text-brand-yellow text-xl text-center xl:text-start xl:text-2xl font-semibold ',
+	h4: 'text-xl xl:text-2xl font-semibold ',
 	h5: 'text-base xl:text-2xl font-semibold tracking-tight',
 	h6: 'text-sm xl:text-xl font-semibold tracking-tight',
-	// h4: text-base font-semibold
+
 
 	paddings: {
 		headerSection: 'pb-4 xl:pb-12',
