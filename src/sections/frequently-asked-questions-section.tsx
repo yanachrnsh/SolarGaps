@@ -3,6 +3,8 @@ import { frequentlyAskedQuestionsSection } from '../constants/content-constants'
 import { SectionHeader } from '../components/section-header/section-header.component';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaMinus, FaPlus } from 'react-icons/fa6';
+
 // import { Collapse } from 'antd';
 
 export const FrequentlyAskedQuestionsSection = () => {
@@ -16,7 +18,7 @@ export const FrequentlyAskedQuestionsSection = () => {
 	};
 	return (
 		<section className={styles.sectionLayout}>
-			<div className="flex">
+			<div className="flex flex-col xl:flex-row">
 				<div className={styles.sectionLeft}>
 					<SectionHeader header={header} />
 				</div>
@@ -59,10 +61,15 @@ const Collapse: React.FC<QuestionCardProps> = ({ card, toggleCollapse: toggleCol
 	return (
 		<div className="border-b py-8 first:pt-0">
 			<button
-				className={`w-full cursor-pointer overflow-hidden border-none bg-none text-start text-2xl font-semibold ${isCollapsed ? '' : 'pb-6'}`}
+				className={`flex w-full cursor-pointer justify-between overflow-hidden border-none bg-none text-start ${isCollapsed ? '' : 'pb-6'}`}
 				onClick={() => toggleCollapse(index)}
 			>
-				{card.title}
+				<h5 className={`${styles.h5}`}> {card.title}</h5>
+				{isCollapsed ? (
+					<FaMinus size={24} className="pr-2 text-brand-yellow" />
+				) : (
+					<FaPlus size={24} className="pr-2 text-light-primary" />
+				)}
 			</button>
 			<motion.div
 				aria-expanded={isCollapsed}
@@ -74,7 +81,7 @@ const Collapse: React.FC<QuestionCardProps> = ({ card, toggleCollapse: toggleCol
 				// className={`overflow-hidden transition-[max-height] duration-300  ${isCollapsed ? 'max-h-0 ' : `max-h-[1000px] `}`}
 			>
 				<div className="">
-					<p className="text-start">{card.description}</p>
+					<p className="text-start font-semibold tracking-tight text-brand-grey-tertiary">{card.description}</p>
 				</div>
 			</motion.div>
 		</div>

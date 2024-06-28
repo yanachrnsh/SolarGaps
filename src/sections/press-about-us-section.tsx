@@ -39,17 +39,17 @@ type PressCardProps = {
 const PressCard: FC<PressCardProps> = ({ card }) => {
 	const { title, subtitle, button, date, img } = card;
 	return (
-		<div className="flex border-y border-brand-grey py-8 ">
-			<div className="flex-40 flex pr-16">
+		<div className="flex flex-col justify-center border-y border-brand-grey py-8 xl:flex-row">
+			<div className="flex flex-40 flex-col gap-3 xl:flex-row xl:gap-0 xl:pr-16">
 				<span className="flex-20 text-sm text-brand-grey-tertiary">{date}</span>
-				<div className="flex-1 bg-light-primary rounded-lg px-7 pt-[53px] pb-9">
-					<img src={img.src} alt={img.description} className="w-full max-w-[14.75rem] max-h-[5.7rem]" />
+				<div className="flex-1 rounded-lg bg-light-primary px-7 pb-9 pt-[53px]">
+					<img src={img.src} alt={img.description} className="max-h-[5.7rem] w-full max-w-[14.75rem]" />
 				</div>
 			</div>
-			<div className="flex-60 flex flex-col gap-5">
-				<h5 className="text-2xl font-semibold">{title}</h5>
-				<span className="text-brand-grey-tertiary text-xl">{subtitle}</span>
-				<a href="#" className="text-base text-brand-yellow pt-3 font-semibold">
+			<div className="flex flex-60 flex-col justify-between gap-5 pt-5 xl:pt-0">
+				<h4 className={styles.h4}>{title}</h4>
+				<span className="text-base font-semibold text-brand-grey-tertiary xl:text-xl">{subtitle}</span>
+				<a href="#" className="text-base font-semibold text-brand-yellow xl:pt-3">
 					{button}
 				</a>
 			</div>

@@ -52,8 +52,8 @@ export default {
 				// 'sm': '640px',
 				// // => @media (min-width: 640px) { ... }
 
-				// 'md': '768px',
-				// // => @media (min-width: 768px) { ... }
+				// md: '766px',
+				// => @media (min-width: 768px) { ... }
 
 				// 'lg': '1024px',
 				// // => @media (min-width: 1024px) { ... }
@@ -67,6 +67,7 @@ export default {
 			letterSpacing: {},
 			gridTemplateColumns: {
 				awards: 'repeat(5, minmax(224px, 1fr))',
+				mission: 'repeat(2, minmax(224px, 327px))',
 			},
 		},
 	},

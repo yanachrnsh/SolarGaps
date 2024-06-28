@@ -33,7 +33,7 @@ export const ForHomeSection = () => {
 		<section className={styles.sectionLayout}>
 			<div className={` ${styles.flexSection} pb-6 xl:pb-12`}>
 				<div className={styles.sectionLeft}>
-					<SectionHeader header={header} />
+					<SectionHeader header={header} headerStyles="pb-0" />
 				</div>
 
 				<p className={`${styles.sectionRight} test-sm font-semibold tracking-tight text-light-secondary xl:text-base`}>

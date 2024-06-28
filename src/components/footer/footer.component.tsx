@@ -10,17 +10,15 @@ export const Footer = () => {
 	return (
 		<footer className="bg-brand-grey-secondary">
 			<div className={` ${styles.sectionLayout} flex flex-col gap-12`}>
-				{/* <div className=" flex"> */}
 				<a href="#">
 					<Icon icon={logoIcon} styles="h-8 w-auto" />
 				</a>
-				{/* </div> */}
-				<div className="flex justify-between flex-wrap gap-12 lg:gap-0">
+				<div className="flex flex-wrap justify-between gap-12 text-light-secondary lg:gap-0">
 					<div className="flex-40">
-						<p className="font-semibold">{lineBreak(address)}</p>
+						<p className="font-semibold text-light-secondary">{lineBreak(address)}</p>
 					</div>
 					<div className="flex-60">
-						<p className="font-semibold">{email}</p>
+						<p className="font-semibold text-light-secondary">{email}</p>
 					</div>
 				</div>
 			</div>
